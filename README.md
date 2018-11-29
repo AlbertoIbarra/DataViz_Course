@@ -1,6 +1,6 @@
 ## Data Visualization Course
 
-#### Effective Presentations
+#### Part 1: Effective Presentations
 
 * Direct Marketing of Term Deposits
 
