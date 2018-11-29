@@ -1,1 +1,1 @@
-This folder contains the descriptions of the data used in the projects of the Data Visualizationn course. 
+This folder contains the descriptions of the data used in the projects of the Data Visualization course. 
