@@ -4,6 +4,6 @@
 
 * Direct Marketing of Term Deposits
 
-#### Dashboards for Business Intelligence
+#### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
