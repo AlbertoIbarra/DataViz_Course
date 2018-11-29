@@ -46,7 +46,7 @@ The variables are:
 
 * `Longitude` (scraped from a different source).
 
-* `RegionName`, General Region (West, North West, North, North east, etc).
+* `RegionName`, general region (West, North West, North, North east, etc).
 
 * `PropertyCount`, number of properties that exist in the suburb.
 
