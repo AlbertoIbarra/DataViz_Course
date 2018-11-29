@@ -6,7 +6,7 @@ Hadley Wickham, Chief Scientist at RStudio, has collected airline on-time data f
 
 In this project, we use these data to evaluate the occurrence of flight delay in the NYC aerea and the extent to which it can be predicted from the available data. Departure delay can be measured in a continuous time scale (e.g. in minutes) or as a binary variable (it is frequently considered that a flight is delayed when the delay exceeds 15 minutes, but other cutoffs can be tried).
 
-#### The data sets
+#### The database
 
 The database includes five tables. In the last three tables, the data are not complete.
 
