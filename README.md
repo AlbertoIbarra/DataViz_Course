@@ -6,6 +6,8 @@
 
 * Melbourne Housing Market
 
+* Cryptocurrency Market Data
+
 #### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
