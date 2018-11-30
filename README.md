@@ -11,3 +11,5 @@
 ### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
+
+* Airbnb Activity in Barcelona
