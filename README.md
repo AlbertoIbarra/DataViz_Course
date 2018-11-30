@@ -1,6 +1,6 @@
 ## Data Visualization Course
 
-#### Part 1: Effective Presentations
+### Part 1: Effective Presentations
 
 * Direct Marketing of Term Deposits
 
@@ -8,6 +8,6 @@
 
 * Cryptocurrency Market Data
 
-#### Part 2: Dashboards for Business Intelligence
+### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
