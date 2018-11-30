@@ -1,4 +1,4 @@
-## Data Visualization Course
+# Data Visualization Course
 
 ### Part 1: Effective Presentations
 
