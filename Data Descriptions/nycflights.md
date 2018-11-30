@@ -1,12 +1,12 @@
-### Flight Delays in the NYC Area
+## Flight Delays in the NYC Area
 
-#### Introduction
+### Introduction
 
 Hadley Wickham, Chief Scientist at RStudio, has collected airline on-time data for all flights departing New York City (NYC) in 2013. The airports covered by the data are LaGuardia Airport (LGA), John F. Kennedy International Airport (JFK) and Newark International Airport (EWR).
 
 In this project, we use these data to evaluate the occurrence of flight delay in the NYC aerea and the extent to which it can be predicted from the available data. Departure delay can be measured in a continuous time scale (e.g. in minutes) or as a binary variable (it is frequently considered that a flight is delayed when the delay exceeds 15 minutes, but other cutoffs can be tried).
 
-#### The database
+### The database
 
 The database includes five tables. In the last three tables, the data are not complete.
 
@@ -104,7 +104,7 @@ The database includes five tables. In the last three tables, the data are not co
 
 * To which extent can departure delay be predicted from the data available here?
 
-#### Sources
+### Sources
 
 1. OpenFlights.org.
 
