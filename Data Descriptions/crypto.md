@@ -1,6 +1,6 @@
-### Cryptocurrency Market Data
+## Cryptocurrency Market Data
 
-#### Introduction
+### Introduction
 
 **Cryptocurrencies** are fast becoming rivals to traditional currency across the world. The digital currencies are available to purchase in many different places, accessible to everyone. With retailers accepting various cryptocurrencies, it could be that money, as we know it, is about to go through a major change.
 
@@ -10,7 +10,7 @@ In addition, the **blockchain** technology on which many cryptocurrencies are ba
 
 The data for this project come in the well known OHLC (Open/High/Low/Close) format, complemented with some additional measures. Collected by Jesse Vent, they cover all cryptocurrencies (1,644), from 2013-04-28 to 2018-06-06.
 
-#### The data set
+### The data set
 
 The actual data set (`crypto.csv`) has 785,024 rows and 13 columns. The columns are:
 
@@ -40,6 +40,6 @@ The actual data set (`crypto.csv`) has 785,024 rows and 13 columns. The columns 
 
 * `spread`, the difference between the high and low values for the day.
 
-#### Source
+### Source
 
 `https://www.kaggle.com/jessevent/all-crypto-currencies`
