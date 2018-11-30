@@ -1,6 +1,6 @@
-### Direct Marketing of Term Deposits
+## Direct Marketing of Term Deposits
 
-#### Introduction
+### Introduction
 
 There are two main approaches for companies to promote products and/or services: through mass campaigns, targeting general indiscriminate public, or through direct marketing, targeting a specific set of contacts. Nowadays, in a global competitive world, positive responses to mass campaigns are typically very low. Alternatively, **direct marketing** focus on targets that assumably will be keener to that specific product/service, making these campaigns more attractive, because of their efficiency. But the increasingly vast number of marketing campaigns has reduced their effect on the general public. Furthermore, economical pressures and competition has led marketing managers to invest on direct campaigns with a strict and rigorous selection of contacts.
 
@@ -12,7 +12,7 @@ The bank has been using its own contact-center to carry out direct marketing cam
 
 The manager in charge of organizing the next campaign is expected to optimize the effort. His objective is to find a **predictive model**, based on data of the preceding campaign, which can explain the success of a contact, i.e. if the client subscribes the deposit. Such model can increase the campaign's efficiency by identifying the main characteristics that affect success, helping in a better management of the available resources (e.g. human effort, phone calls and time) and the selection of a high quality and affordable set of potential customers. To be useful for the direct campaign, a predictive model should allow to reduce the number of calls in a relevant way without loosing a relevant number of subscribers.
 
-#### The data set
+### The data set
 
 The data for this project come from the previous phone campaign of the bank, which involved a total of 45,211 contacts. During that campaign, an attractive long-term deposit application, with good interest rates, was offered. The contacts led to 5,289 subscriptions (11.7% success rate).
 
@@ -46,6 +46,6 @@ The data set combines demographic data with data about the interaction of the cu
 
 * Has the client subscribed a term deposit? (`deposit`). The values are "yes" and "no".
 
-#### Source
+### Source
 
 S Moro, R Laureano & P Cortez (2011), Using data mining for bank direct marketing --- An application of the CRISP-DM methodology, *Proceedings of the European Simulation and Modelling Conference* (Guimarães, Portugal).
