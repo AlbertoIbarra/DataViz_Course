@@ -1,4 +1,4 @@
-## A sneak peek into the Airbnb activity in Boston
+## A Sneak Peek into the Airbnb Activity in Boston
 
 ### Introduction
 
