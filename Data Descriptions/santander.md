@@ -1,6 +1,6 @@
-### Santander Product Recommendation
+## Santander Product Recommendation
 
-#### Introduction
+### Introduction
 
 Ready to make a down payment on your first house? Or looking to leverage the equity in the home you have? To support needs for a range of financial decisions, Santander Bank offers a lending hand to their customers through personalized **product recommendations**.
 
@@ -66,6 +66,6 @@ The variables are:
 
 * `recibo`, direct debit.
 
-#### Source
+### Source
 
 `https://www.kaggle.com/c/santander-product-recommendation`
