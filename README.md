@@ -10,6 +10,8 @@
 
 * Vehicles for Sale from Craigslist.org
 
+* Santander Product Recommendation
+
 ### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
