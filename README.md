@@ -17,3 +17,5 @@
 * Flight Delays in the NYC Area
 
 * A Sneak Peek at Airbnb Activity in Barcelona
+
+* A Sneak Peek at Airbnb Activity in Boston
