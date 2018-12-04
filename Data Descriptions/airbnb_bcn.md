@@ -1,4 +1,4 @@
-## A sneak peek into the Airbnb activity in Barcelona
+## A sneak Peek into the Airbnb Activity in Barcelona
 
 ### Introduction
 
