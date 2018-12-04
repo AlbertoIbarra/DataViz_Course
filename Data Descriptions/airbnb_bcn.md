@@ -24,7 +24,7 @@ Questions:
 
 Tasks:
 
-* Modelling prices. Airbnb has an algorithm, called *Smart Pricing*, for suggesting prices to new listings.
+* Modeling prices. Airbnb has an algorithm, called *Smart Pricing*, for suggesting prices to new listings.
 
 * Predicting occupation.
 
