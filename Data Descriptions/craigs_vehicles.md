@@ -1,10 +1,10 @@
-### Vehicles for Sale from Craigslist.org
+## Vehicles for Sale from Craigslist.org
 
-#### Introduction
+### Introduction
 
 Craigslist is the world's largest collection of used vehicles for sale, yet it's very difficult to collect all of them in the same place. Austin Reese built a scraper for a school project and expanded upon it later to create this data set which includes every used vehicle entry within every North-American region on Craigslist.
 
-#### The data set
+### The data set
 
 The data for this project were taken in October of 2018. They contain most all relevant information that Craigslist provides on car sales including columns like price, condition, manufacturer, latitude/longitude, and 15 other categories. Blank entries indicate that the listing did not provide said information.
 
@@ -50,6 +50,6 @@ The data set has 1.72 million of rows and 20 columns. The columns are:
 
 * `long` (numeric), latitude of the vehicle, not precise but very close.
 
-#### Source
+### Source
 
 Kaggle.
