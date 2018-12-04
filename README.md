@@ -8,6 +8,8 @@
 
 * Cryptocurrency Market Data
 
+* Vehicles for Sale from Craigslist.org
+
 ### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
