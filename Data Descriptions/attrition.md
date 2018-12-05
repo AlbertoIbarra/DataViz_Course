@@ -20,11 +20,11 @@ The data set contains information about 1,470 employees. The variables are:
 
 * `Age`, the employee's age, in years.
 
-* `BusinessTravel`, with values "Non-Travel", "Travel_Frequently" and Travel_Rarely".
+* `BusinessTravel`, with values "Non-Travel", "Travel_Frequently" and Travel_Rarely".
 
 * `DailyRate`.
 
-* `Department`, with values "Human Resources", "Research & Development" and "Sales".
+* `Department`, with values "Human Resources", "Research & Development" and "Sales".
 
 * `DistanceFromHome`.
 
@@ -46,9 +46,9 @@ The data set contains information about 1,470 employees. The variables are:
 
 * `JobSatisfaction`, with values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
 
-* `MaritalStatus`, with values "Divorced", "Married" and "Single".
+* `MaritalStatus`, with values "Divorced", "Married" and "Single".
 
-* `MonthlyIncome`, monthly income in US dollars.
+* `MonthlyIncome`, monthly income in US dollars.
 
 * `MonthlyRate`.
 
@@ -60,23 +60,23 @@ The data set contains information about 1,470 employees. The variables are:
 
 * `PerformanceRating, with values 1 (Low), 2 (Good), 3 (Excellent) and 4 (Outstanding).
 
-* `RelationshipSatisfaction`, with values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
+* `RelationshipSatisfaction`, with values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
 
-* `StockOptionLevel`.
+* `StockOptionLevel`.
 
-* `TotalWorkingYears`.
+* `TotalWorkingYears`.
 
-* `TrainingTimesLastYear`.
+* `TrainingTimesLastYear`.
 
-* `WorkLifeBalance`, with values 1 (Bad), 2 (Good), 3 (Better) and 4 (Best).
+* `WorkLifeBalance`, with values 1 (Bad), 2 (Good), 3 (Better) and 4 (Best).
 
 * `YearsAtCompany`.
 
 * `YearsInCurrentRole`.
 
-* `YearsSinceLastPromotion`.
+* `YearsSinceLastPromotion`.
 
-* `YearsWithCurrManager`.
+* `YearsWithCurrManager`.
 
 #### Source
 
