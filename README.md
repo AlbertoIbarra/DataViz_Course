@@ -12,6 +12,8 @@
 
 * Santander Product Recommendation
 
+* Employee Attrition and Performance
+
 ### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
