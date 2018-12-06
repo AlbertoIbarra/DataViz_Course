@@ -1,6 +1,6 @@
-### Attrition and Performance Analysis
+## Attrition and Performance Analysis
 
-#### Introduction
+### Introduction
 
 Attrition in business can mean the reduction in staff and employees in a company through normal means, such as retirement and resignation, the loss of customers or clients to old age or growing out of the company’s target demographic.The cause of attrition may be either voluntary or involuntary. Each industry has its own standards for acceptable attrition rates, and these rates can also differ between skilled and unskilled positions.
 
@@ -10,7 +10,7 @@ Although it is possible for a company to use employee attrition to its benefit i
 
 In this project, we try to analyse what factors lead to employee retention in companies, and what factors influence them the most. We use a dataset that is published by the Human Resource department of IBM. here has been a great deal of talk for a couple decades now about the need for HR to be more strategic. Aside from any philosophical discussions of the true nature of 'strategy' and strategic thinking, what this normally means is that business leaders want HR to be more like their marketing departments - analytical, results-oriented, and able to directly tie their activities to the firm's desired outcomes (more money!!). Marketing firms today rely quite heavily on predictive analytics and data mining/data science. The future of HR likely lies along this same road. This kernel explores one potential problem such an analytical 'strategic' HR practicioner might reasonably expect to wrestle with.
 
-#### The data set
+### The data set
 
 The data set contains information about 1,470 employees. The variables are:
 
@@ -78,6 +78,6 @@ The data set contains information about 1,470 employees. The variables are:
 
 * `YearsWithCurrManager`.
 
-#### Source
+### Source
 
 Kaggle and Krushna Metha.
