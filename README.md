@@ -14,6 +14,8 @@
 
 * Employee Attrition and Performance
 
+* Airlines Reputation in Twitter
+
 ### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
