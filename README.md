@@ -23,3 +23,5 @@
 * A Sneak Peek into the Airbnb Activity in Barcelona
 
 * A Sneak Peek into the Airbnb Activity in Boston
+
+* Rossmann Store Sales
