@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Rossmann operates over 3,000 drug stores in seven European countries. Currently,  Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.
+Rossmann operates over 3,000 drug stores in seven European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.
 
 To get ideas on how to create a robust prediction model, Rossmann has released data on daily sales for 1,115 stores located across Germany, including store, promotion, and competitor data. Reliable sales forecasts enable store managers to create effective staff schedules that increase productivity and motivation. Better prediction models would help store managers stay focused on what is most important to them: their customers and their teams.
 
