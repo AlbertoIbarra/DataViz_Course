@@ -27,3 +27,5 @@
 * Rossmann Store Sales
 
 * Corporación Favorita Grocery Sales
+
+* 1C Company Sales
