@@ -1,4 +1,4 @@
-## Ecobici
+## EcoBici
 
 ### Introduction
 
@@ -6,7 +6,7 @@ EcoBici is the bicycle sharing system launched in February 2010 by the governmen
 
 The system is run by a private company, Clear Channel Outdoor, but funded by the government with an initial investment of 75 million pesos (US$5,750,000). Users of the system are required to purchase an RFID card at a cost of 400 pesos (US$30) which will provide them with access to the bicycles for one year. For tourists, a 7-day card can be obtained for 300 pesos, a 3-day card for 180 pesos, and a single day card for 90 pesos. Use of a bicycle is free for the first 45 minutes; extra charges are applied for use beyond this time limit.
 
-UEcoBici station readers have a credit card slot at the bottom. You can register and pay (with any credit card) very simply by answering a few questions on the screen - no ID required, no passports, no forms to sign. Once you register on the screen, you are given a registration number and you put in your own PIN code. You can then get a bike at any station just using that registration number and PIN.
+EcoBici station readers have a credit card slot at the bottom. You can register and pay (with any credit card) very simply by answering a few questions on the screen - no ID required, no passports, no forms to sign. Once you register on the screen, you are given a registration number and you put in your own PIN code. You can then get a bike at any station just using that registration number and PIN.
 
 ### The database
 
