@@ -16,6 +16,8 @@
 
 * Airlines Reputation in Twitter
 
+* The Kebab Factory
+
 ### Part 2: Dashboards for Business Intelligence
 
 * Flight Delays in the NYC Area
@@ -31,3 +33,5 @@
 * 1C Company Sales
 
 * EcoBici
+
+* Instacart Market Basket Analysis
