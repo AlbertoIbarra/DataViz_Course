@@ -16,7 +16,7 @@
 
 * Airlines Reputation in Twitter
 
-* The Kebab Factory
+* The Kebab Factory Sales
 
 ### Part 2: Dashboards for Business Intelligence
 
