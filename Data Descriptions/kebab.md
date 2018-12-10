@@ -4,7 +4,7 @@
 
  The Kekab Factory is a family business which has been operating at Harmah, Saudi Arabia, for the last years. The business is focused on food delivery. Given the current success, they opened a second branch on Thursday 27th, July 2017. A third branch followed on Saturday 13th, January 2018.
 
-The data for this project are daily sales, in Saudi Arabia riyals (SAR), and in number of customers, of . There are some interesting questions that the managers of The Kebab Factory would like to examine:
+The data for this project are daily sales, in Saudi Arabia riyals (SAR) and in number of customers. There are some interesting questions that the managers of The Kebab Factory would like to examine:
 
 * Did the total sales go up or down with the opening of new branches?
 
