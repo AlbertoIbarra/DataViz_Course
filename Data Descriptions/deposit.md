@@ -16,33 +16,33 @@ The data for this project come from the previous phone campaign of the bank, whi
 
 The data set combines demographic data with data about the interaction of the customer and the bank. The variables are:
 
-* `age`, contact's age in years.
+* `age`, the client's age in years.
 
-* `job`, contact's type of job, taking values 'admin', 'unknown', 'unemployed', 'management', 'housemaid', 'student', 'retired', 'self-employed, 'entrepreneur', 'technician' and 'services'.
+* `job`, the client's type of job, taking values 'admin', 'unknown', 'unemployed', 'management', 'housemaid', 'student', 'retired', 'self-employed, 'entrepreneur', 'technician' and 'services'.
 
-* `marital`, contact's marital status, taking values 'married', 'divorced' and 'single'.
+* `marital`, the client's marital status, taking values 'married', 'divorced' and 'single'.
 
-* `education`, contact's education level, taking values 'unknown', 'secondary', 'primary' and 'tertiary'.
+* `education`, the client's education level, taking values 'unknown', 'secondary', 'primary' and 'tertiary'.
 
-* `default`, whether the contact has credit in default, taking values 'yes' and 'no'.
+* `default`, whether the client has credit in default, taking values 'yes' and 'no'.
 
-* `balance`, contact's  average yearly balance in euros.
+* `balance`, the client's  average yearly balance in euros.
 
-* `housing`, whether the contact has a housing loan, taking values 'yes' and 'no'.
+* `housing`, whether the client has a housing loan, taking values 'yes' and 'no'.
 
-* `loan`, whether the contact has a personal loan, taking values 'yes' and 'no'.
+* `loan`, whether the client has a personal loan, taking values 'yes' and 'no'.
 
 * `contact`, the usual communication channel, taking values 'unknown', 'telephone' and 'cellular'.
 
-* Duration of last contact before the campaign in seconds (`duration`).  
+* `duration`, the duration of last contact before the campaign in seconds.
 
-* Number of days passed by after the client was last contacted from a previous campaign (`pdays`). When the client has not been not previously contacted, it takes value -1.
+* `pdays`, the number of days passed by after the client was last contacted from a previous campaign. When the client has not been not previously contacted, it takes value -1.
 
-* Number of contacts performed before this campaign and for this client (`previous`).
+* `previous`, the number of contacts performed before this campaign and for this client.
 
-* Outcome of the previous marketing campaign (`poutcome`). The values are "unknown", "other", "failure" and "success".
+* `poutcome`, the outcome of the previous marketing campaign. The values are 'unknown', 'other', 'failure' and 'success'.
 
-* Has the client subscribed a term deposit? (`deposit`). The values are "yes" and "no".
+* `deposit`, whether the client has subscribed a term deposit, taking values 'yes' and 'no'.
 
 ### Source
 
