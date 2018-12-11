@@ -12,7 +12,7 @@
 
 * Santander Product Recommendation
 
-* Employee Attrition and Performance
+* The Turnover Model
 
 * Airlines Reputation in Twitter
 
