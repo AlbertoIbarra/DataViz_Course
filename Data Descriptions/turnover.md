@@ -10,7 +10,7 @@ Although it is possible for a company to use employee attrition to its benefit i
 
 There has been a great deal of talk for a couple decades now about the need for HR to be more strategic. Aside from any philosophical discussions of the true nature of 'strategy' and strategic thinking, what this normally means is that business leaders want HR to be more like their marketing departments - analytical, results-oriented, and able to directly tie their activities to the firm's desired outcomes (more money!). Marketing firms today rely quite heavily on predictive analytics and data mining/data science. The future of HR likely lies along this same road. 
 
-In this project, we explore one potential problem such an analytical 'strategic' HR practicioner might reasonably expect to wrestle with, using data from a Health Care company. We try to analyse what factors lead to **employee retention** in companies, and what factors influence them the most. How and why are they quitting their jobs? Is it because of short monthly wages, or excess distance from home, or poor performance ratings? 
+In this project, we explore one potential problem such an analytical 'strategic' HR practicioner might reasonably expect to wrestle with, using data from a Healthcare company. We try to analyse what factors lead to **employee retention** in companies, and what factors influence them the most. How and why are they quitting their jobs? Is it because of short monthly wages, or excess distance from home, or poor performance ratings? 
 
 ### The data set
 
