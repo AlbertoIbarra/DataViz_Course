@@ -14,9 +14,9 @@ The data for this project have been extracted from the Twitter REST API, using t
 
 The data base available for this project contains nine tables, one for each company. The fields (names as provided by the Twitter API) are:
 
-* `created_at`, coordinated universal ime (UTC) when the weet was created.
+* `created_at`, coordinated universal time (UTC) when the weet was created.
 
-* `screen_name`, the 'screen_name' attribute of the user who posted the tweet.
+* `screen_name`, the 'screen_name' attribute of the user who posted the tweet. It is the screen name, handle, or alias that this user identifies themselves with. Screen names are unique but subject to change.
 
 * `account_created_at`, the 'created_at' attribute of the user who posted the tweet.
 
@@ -28,13 +28,13 @@ The data base available for this project contains nine tables, one for each comp
 
 * `is_retweet`, Boolean field for the tweet being a retweet.
 
-* `retweet_count`, number of times the tweet has been retweeted.
+* `retweet_count`, number of times the tweet has been retweeted. If the tweet is a retweet, it refers to the source tweet, not to the actual one. A retweet of a retweet is counted as a retweet of the source tweet.
 
-* `followers_count`, the 'followers_count' attribute of the user who posted the tweet.
+* `followers_count`, the followers_count' attribute of the user who posted the tweet. It is the number of followers of that user.
 
-* `friends_count`, the 'friends_count' attribute of the user who posted the tweet.
+* `friends_count`, the 'friends_count' attribute of the user who posted the tweet. It is the number of followers of that user.
 
-* `favourites_count`, the 'favourites_count' attribute of the user who posted the tweet.
+* `favourites_count`, the 'favourites_count' attribute of the user who posted the tweet. it is the number of tweets that user has liked in the account’s lifetime.
 
 ### Source
 
