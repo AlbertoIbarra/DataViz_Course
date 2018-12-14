@@ -14,7 +14,7 @@ The data for this project are daily sales, which have been normalized for confid
 
 * What is the lagging duration of the ads? How long does their effect last?
 
-* The delivery fee through the HungerStation app (`www.hungerstation.com`) is 15 SAR. When it is offered for free to the customers, The Kebab Factory pays 7.5 SAR and the delivery company subsidizes 7.5 SAR. Is this a good idea? Is the increase in orders and sales worth the 7.5 SAR paid? Note the following: a) HungerStation charges The Kebab Factory a 17% fee on sales, b) sales through HungerStation make up 25% of sales on average, c) during the promotion days, free delivery sales through the app are 51% on average, and d) the cost of the goods sold is 48%.
+* The delivery fee through the HungerStation app (`www.hungerstation.com`) is 15 SAR. When it is offered for free to the customers, The Kebab Factory pays 7.5 SAR and the delivery company subsidizes 7.5 SAR. Is this a good idea? Is the increase in orders and sales worth the 7.5 SAR paid? Note the following: a) HungerStation charges The Kebab Factory a 17% fee on sales, b) sales through HungerStation make up 25% of sales on average, c) during the promotion days, free delivery sales through the app are 51% on average, and d) the cost of the goods delivered is 48%.
 
 #### The data set
 
