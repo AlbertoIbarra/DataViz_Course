@@ -36,7 +36,7 @@ The database includes five tables. In the last three tables, the data are not co
 
 * The table `flights` contains on-time data for all flights (336,776) that departed the NYC area in 2013:
 
-    + `datetime`, the scheduled date and hour of the flight as a POSIXct date in the local time zone.
+        + `datetime`, the scheduled date and hour of the flight, as yyyy-mm-dd hh:mm:ss, in the local time zone.
 
     + `dep_time`, the actual departure time of the flight.
     
@@ -80,27 +80,33 @@ The database includes five tables. In the last three tables, the data are not co
     
     + `seats`, the number of seats of the plane.
 
-    + The average cruising speed in mph (`speed`).
+    + `speed`, the average cruising speed of the plane in mph.
 
     + `engine`, the type of engine.
 
 * The table `weather` contains hourly meterological data for LGA, JFK and EWR:
 
-    + The weather station (`origin`).
+    + `origin`, the weather station.
 
-    + The date and hour of the recording as a POSIXct date (`datetime`).
+    + `datetime`, the date and hour of the recording, as yyyy-mm-dd hh:mm:ss.
 
-    + The temperature and dewpoint in Farenheit (`temp`, `dewp`).
+    + `temp`, the temperature in Farenheit.
 
-    + The relative humidity (`humid`).
+    + `dewp`, the dewpoint in Farenheit.
 
-    + The wind direction in degrees, speed and gust speed in mph (`wind_dir`, `wind_speed`, `wind_gust`).
+    + `humid`, the relative humidity in percentage scale.
 
-    + The precipitation in inches (`precip`).
+    + `wind_dir., the wind direction in degrees.
 
-    + The sea level pressure in millibars (`pressure`).
+    + `wind_speed`, the wind speed in mph.
 
-    + The visibility in miles (`visib`).
+    + `wind_gust`, the wind gust in mph.
+
+    + `precip`, the precipitation in inches.
+
+    + `pressure`, the sea level pressure in millibars.
+
+    + `visib`, the visibility in miles.
 
 #### Lines of analysis
 
