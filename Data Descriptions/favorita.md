@@ -4,13 +4,13 @@
 
 Brick-and-mortar grocery stores are always in a delicate dance with purchasing and sales forecasting. Predict a little over, and grocers are stuck with overstocked, perishable goods. Guess a little under, and popular items quickly sell out, leaving money on the table and customers fuming.
 
-The problem becomes more complex as retailers add new locations with unique needs, new products, ever transitioning seasonal tastes, and unpredictable product marketing. Corporación Favorita, a large Ecuadorian-based grocery retailer, knows this all too well. They operate hundreds of supermarkets, with over 200,000 different products on their shelves. They currently rely on subjective forecasting methods with very little data to back them up and very little automation to execute plans.
+The problem becomes more complex as retailers add new locations with unique needs, new products, ever transitioning seasonal tastes, and unpredictable product marketing. Corporación Favorita, a large Ecuadorian-based grocery retailer, knows this all too well. They operate hundreds of supermarkets, with over 200,000 different products on their shelves. They currently rely on subjective forecasting methods, with very little data to back them up and very little automation to execute plans.
 
-In search for help to build a model that more accurately forecasts product sales, Corporación Favorita has released sales data of 4,100 products in a sample of 48 stores located in Ecuador.  The data cover 4.5 years, from January 2013 to August 2017. The management at Corporación Favorita is excited to see how machine learning could better ensure they please customers by having just enough of the right products at the right time.
+In search for help to build a model that more accurately forecasts product sales, Corporación Favorita has released sales data of 4,100 products in a sample of 48 stores located in Ecuador. The data cover 4.5 years, from January 2013 to August 2017. The management at Corporación Favorita is excited to see how machine learning could better ensure they please customers by having just enough of the right products at the right time.
 
 ### The database
 
-The data released include dates, store and item information, whether that item was being promoted, as well as the unit sales. Additional files include supplementary information that may be useful in building the models.
+The data for this project include dates, store and item information, whether that item was being promoted, as well as the unit sales. Additional files include supplemental information which may be useful in building the models.
 
 * The table `holiday_events` contains information on 350 events, national, regional and local. The fields are:
 
@@ -18,13 +18,13 @@ The data released include dates, store and item information, whether that item w
 
     + `type`, the type of event, taking values 'Additional', 'Bridge', 'Event', 'Holiday', 'Transfer' and 'Work Day'.
 
-    + `locale`, indicating the scope of the event. The values are `Local`, `National` and `Regional`.
+    + `locale`, indicating the scope of the event. The values are 'Local', 'National' and 'Regional'.
 
     + `locale_name` of the locale related to the event. It can be a town, a region, or 'Ecuador', for national events.
 
     + `description`, the event commemorated.
 
-    +  `transferred`, a Boolean field for the commemoration having been transferred to a different day (it only happens for some holidays).
+    +  `transferred`, a Boolean field (True(False) for the commemoration having been transferred to a different day (this only happens for some holidays).
 
 * The table `items` contains information on the items sold. The fields are:
 
