@@ -48,7 +48,7 @@ The database includes five tables. In the last three tables, the data are not co
 
 * The table `flights` contains on-time data for all flights (336,776) that departed the NYC area in 2013:
 
-        + `datetime`, the scheduled date and hour of the flight, as yyyy-mm-dd hh:mm:ss, in the local time zone.
+    + `datetime`, the scheduled date and hour of the flight, as yyyy-mm-dd hh:mm:ss, in the local time zone.
 
     + `dep_time`, the actual departure time of the flight.
     
