@@ -24,11 +24,11 @@ The data cover from 2017-02-14 to 2018-11-13. The variables are:
 
 * `weekday` (string), as Monday, Tuesday, etc. Note that the weekend in Saudi Arabia is Friday and Saturday.
 
-* `branch1_sales` (numeric), daily sales in Branch 1, in SAR. Sales are zero when the restaurant is not open.
+* `branch1_sales` (numeric), daily sales in Branch 1, in SAR. The sales are zero when the restaurant is not open.
 
-* `branch2_sales` (numeric), daily sales in Branch 2, in SAR. Sales are zero when the restaurant is not open. First opening on 2017-07-27.
+* `branch2_sales` (numeric), daily sales in Branch 2, in SAR. The sales are zero when the restaurant is not open. The first opening takes place on 2017-07-27.
 
-* `branch3_sales` (numeric), daily sales in Branch 3, in SAR. Sales are zero when the restaurant is not open. First opening on 2018-01-13.
+* `branch3_sales` (numeric), daily sales in Branch 3, in SAR. The sales are zero when the restaurant is not open. The first opening takes place on 2018-01-13.
 
 * `branch1_count` (numeric), daily number of customers in Branch 1.
 
