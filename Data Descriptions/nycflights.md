@@ -12,23 +12,25 @@ The database includes five tables. In the last three tables, the data are not co
 
 * The table `airlines` contains the look up airline names (16) from their carrier codes:
 
-    + The two letter abbreviation (`carrier`).
+    + `carrier`, the two-letter abbreviation of the carrier name.
 
-    + The full name of the carrier (`name`).
+    + `name`, the full name of the carrier.
 
 * The table `airports` contains metadata for all the airports (1,458) connected with the NYC area:
 
-    + The FAA airport code (`faa`).
+    + `faa`, the FAA airport code.
 
-    + The usual name of the aiport (`name`).
+    + `name`, the usual name of the aiport.
 
-    + The coordinates of the location of the airport (`lat`, `lon`).
+    + `lon`, the longitude of the location of the airport.
 
-    + The altitude in feet (`alt`)
+    + `lat`, the latitude of the location of the airport.
 
-    + The timezone offset from GMT (`tz`).
+    + `alt`, the altitude in feet of the airport.
 
-    + The daylight savings time zone (`dst`). A denotes the Standard US DST, starting on the second Sunday of March and ending on the first Sunday of November, U stands for unknown and N for non-existing dst).
+    + `tz`, the timezone offset from GMT at the airport.
+
+    + `dst`, the daylight savings time zone, taking values 'A' (Standard US DST, starting on the second Sunday of March and ending on the first Sunday of November), 'U' (unknown) and 'N' (non-existing).
 
     + The IANA time zone, as determined by GeoNames webservice (`tzone`).
 
