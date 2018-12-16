@@ -32,45 +32,57 @@ The database includes five tables. In the last three tables, the data are not co
 
     + `dst`, the daylight savings time zone, taking values 'A' (Standard US DST, starting on the second Sunday of March and ending on the first Sunday of November), 'U' (unknown) and 'N' (non-existing).
 
-    + The IANA time zone, as determined by GeoNames webservice (`tzone`).
+    + `tzone`, the IANA time zone, as determined by GeoNames webservice.
 
 * The table `flights` contains on-time data for all flights (336,776) that departed the NYC area in 2013:
 
-    + Scheduled date and hour of the flight as a POSIXct date in the local time zone (`datetime`).
+    + `datetime`, the scheduled date and hour of the flight as a POSIXct date in the local time zone.
 
-    + Actual departure and arrival times (`dep_time`, `arr_time`).
+    + `dep_time`, the actual departure time of the flight.
+    
+    + `arr_time`, the actual arrival time of the flight.
 
-    + Scheduled departure and arrival times (`sched_dep_time`, `sched_arr_time`).
+    + `sched_dep_time`, the scheduled departure time of the flight.
+    
+    + `sched_arr_time`, the scheduled arrival time of the flight.
 
-    + Departure and arrival delays in minutes (`dep_delay`, `arr_delay`), with negative times representing early departures/arrivals.
+    + `dep_delay`, the departure dela in minutes, with negative time representing early departure.
+    
+    + `arr_delay`, the arrival delay in minutes, with negative time representing early arrival.
 
-    + Two-letter carrier abbreviation (`carrier`).
+    + `carrier`, the two-letter carrier abbreviation.
 
-    + Plane tail number (`tailnum`).
+    + `tailnum`, the plane tail number.
 
-    + Flight number (`flight`).
+    + `flight`, the flight number.
 
-    + Origin and destination (`origin`, `dest`).
+    + `origin`, the origin of the flight.
 
-    + Amount of time spent in the air in minutes (`air_time`).
+    + `dest`, the destination of the flight.
 
-    + Distance between airports in miles (`distance`).
+    + `air_time`, the amount of time spent in the air in minutes.
+
+    + `distance`, the distance between the origin and destination airports in miles.
 
 * The table `planes` contains plane metadata for all plane tailnumbers (3,322) found in the FAA aircraft registry:
 
-    + The tail number (`tailnum`).
+    + `tailnum`, the plane tail number.
 
-    + The year manufactured (`year`).
+    + `year`, the year the plane was manufactured.
 
-    + The type of plane (`type`).
+    + `type`, the type of plane.
 
-    + The manufacturer and model (`manufacturer`, `model`).
+    + `manufacturer`, the manufacturer of the plane. 
+    
+    + `model`, the model of the plane.
 
-    + The number of engines and seats (`engines`, `seats`).
+    + `engines`, the number of engines of the plane.
+    
+    + `seats`, the number of seats of the plane.
 
     + The average cruising speed in mph (`speed`).
 
-    + The type of engine (`engine`).
+    + `engine`, the type of engine.
 
 * The table `weather` contains hourly meterological data for LGA, JFK and EWR:
 
