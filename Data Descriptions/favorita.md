@@ -12,7 +12,7 @@ In search for help to build a model that more accurately forecasts product sales
 
 The data for this project include dates, store and item information, whether that item was being promoted, as well as the unit sales. Additional files include supplemental information which may be useful in building the models.
 
-* The table `holiday_events` contains information on 350 events, national, regional and local. The fields are:
+* The table `holidays_events` contains information on 350 events, national, regional and local. The fields are:
 
     + `date`, as yyyy-mm-dd.
 
@@ -26,7 +26,7 @@ The data for this project include dates, store and item information, whether tha
 
     +  `transferred`, a Boolean field (True(False) for the commemoration having been transferred to a different day (this only happens for some holidays).
 
-* The table `items` contains information on the items sold. The fields are:
+* The table `items` contains item metadata. The fields are:
 
     + `item_nbr`, an ID for the product.
 
@@ -42,7 +42,7 @@ The data for this project include dates, store and item information, whether tha
 
     + `dcoilwtico`, the crude oil price (US dollars) for the West Texas Intermediate (WTI) quality in Cushing, Oklahoma.
 
-* The table `stores` contains
+* The table `stores` contains store metadata. The fields are:
 
     + `store_nbr`, an ID for the store.
 
@@ -52,21 +52,21 @@ The data for this project include dates, store and item information, whether tha
 
     + `type`, the type of store, taking values 'A', 'B', 'C', 'D' and 'E'.
 
-    + `cluster`, groups of stores.
+    + `cluster`, a grouping of similar stores.
 
 * The table `unit_sales` contains data on unit sales by date, store and item. It does not include rows for items that had zero unit sales for a store/date combination. There is no information as to whether or not the item was in stock for the store on the date. The fields are:
 
-    + `id`, an ID for the record.
+    + `id`, a unique ID for the record.
 
     +	`date`, as yyyy-mm-dd.
 
-    + `store_nbr`, an ID for the store.
+    + `store_nbr`, a unique ID for the store.
 
-    + `item_nbr`, an ID for the product.
+    + `item_nbr`, a unique ID for the product.
 
     + `unit_sales`, the unit sales for that item on that date at that store. It can be integer (e.g., a bag of chips) or float (e.g., 1.5 kg of cheese). Negative values represent returns of that particular item.
 
-    + `onpromotion`, whether that item was on promotion on that date at that store. Approximately 16% of the `onpromotion` values in this file are `NaN`.
+    + `onpromotion`, a Boolean field indicating whether that item was on promotion on that date at that store. Approximately 16% of the `onpromotion` values in this file are missing.
 
 * The table `transactions` contains data on the number of transactions per store and date. The fields are:
 
@@ -74,7 +74,7 @@ The data for this project include dates, store and item information, whether tha
 
     + `store_nbr`, an ID for the store.
 
-    + `transactions` the number of transactions on that date at that store.
+    + `transactions`, the number of transactions on that date at that store.
 
 ### Source
 
