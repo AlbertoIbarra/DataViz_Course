@@ -4,31 +4,31 @@
 
 Craigslist is a classified advertisements website with sections devoted to jobs, housing, for sale, items wanted, services, community, gigs, résumés, and discussion forums. Craig Newmark began the service in 1995 as an email distribution list to friends, featuring local events in the San Francisco Bay Area. It became a web-based service in 1996 and expanded into other classified categories. It started expanding to other U.S. cities in 2000, and now covers 70 countries.
 
-Nowadays, Craigslist provcides the world's largest collection of used vehicles for sale. Nevertheless, it is very difficult to collect all of them in the same place. Austin Reese built a scraper for a school project and expanded upon it later to create this data set which includes every used vehicle entry from every North-American region on Craigslist.
+Nowadays, Craigslist provides the world's largest collection of used vehicles for sale. Nevertheless, it is very difficult to collect all of them in the same place. Austin Reese built a scraper for a school project and expanded upon it later to create this data set which includes every used vehicle entry from every North-American region on Craigslist.
 
 ### The data set
 
-The data for this project were taken in October of 2018. They contain most all relevant information that Craigslist provides on car sales including columns like price, condition, manufacturer, latitude/longitude, and 15 other categories. Blank entries indicate that the listing did not provide said information.
+The data for this project were captured in October of 2018. They contain the most relevant information that Craigslist provides on car sales, including fields like price, condition, manufacturer, latitude/longitude, and 15 other categories. Blank entries indicate that the listing did not provide that information. Missing values are frequent in some fields.
 
-The data set has 1.72 million of rows and 20 columns. The columns are:
+The data set has 699,316 records. The fields are:
 
-* `url` (string), link to listing.
+* `url`, link to listing.
 
-* `city` (string), Craigslist region in which that listing was posted.
+* `site`, the ID of the Craigslist site in which that listing was posted. It comes as part of the URL. Example: in the URL `https://newyork.craigslist.org/mnh/ctd/d/2005-nissan-pathfinder-le-4x4/6719445914.html`, the site is 'newyork', which accounts for the New York City metropolitan area. Later in the same URL, 'mnh' refers to Manhattan. Some Craigslist sites cover large regions instead of individual metropolitan areas —- for example, the US state of Wyoming, or the region called California Gold Country.
 
-* `price` (numeric), price of vehicle.
+* `price`, price of vehicle in US dollars.
 
-* `year` (numeric), year of the vehicle.
+* `year`, year of the vehicle.
 
-* `manufacturer` (string), make of the vehicle.
+* `make`, make of the vehicle. Example: 'hyundai'.
 
-* `make` (string), make of the vehicle.
+* `model`, model of the vehicle. Example: 'sonata'. 
 
-* `condition` (string), condition of the vehicle.
+* `condition`, condition of the vehicle, traking the values 'excellent', 'good', 'like new', 'fair', 'new' and 'salvage'.
 
-* `cylinders` (string), number of cylinders of the vehicle.
+* `cylinders`, the number of cylinders of the vehicle.
 
-* `fuel` (string), fuel taken by the vehicle.
+* `fuel`, fuel taken by the vehicle, taking the values 'gas', 'diesel', 'other', 'hybrid' and 'electric'.
 
 * `odometer` (numeric), miles the vehicle has been driven.
 
