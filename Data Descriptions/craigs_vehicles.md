@@ -1,8 +1,10 @@
-## Vehicles for Sale from Craigslist.org
+## Vehicles for Sale from Craigslist
 
 ### Introduction
 
-Craigslist is the world's largest collection of used vehicles for sale, yet it's very difficult to collect all of them in the same place. Austin Reese built a scraper for a school project and expanded upon it later to create this data set which includes every used vehicle entry within every North-American region on Craigslist.
+Craigslist is a classified advertisements website with sections devoted to jobs, housing, for sale, items wanted, services, community, gigs, résumés, and discussion forums. Craig Newmark began the service in 1995 as an email distribution list to friends, featuring local events in the San Francisco Bay Area. It became a web-based service in 1996 and expanded into other classified categories. It started expanding to other U.S. cities in 2000, and now covers 70 countries.
+
+Nowadays, Craigslist provcides the world's largest collection of used vehicles for sale. Nevertheless, it is very difficult to collect all of them in the same place. Austin Reese built a scraper for a school project and expanded upon it later to create this data set which includes every used vehicle entry from every North-American region on Craigslist.
 
 ### The data set
 
