@@ -34,23 +34,23 @@ The data set has 699,316 records. The fields are:
 
 * `title_status`, title status of the vehicle, taking values 'clean' (this vehicle has all legal documents), 'lien' (this vehicle is subject to a lien), 'missing' (these documents are missing), 'parts only' (typically found on a bill of sale or transfer form, not on a title, but, if a parts only bill of sale is submitted for vehicle title processing, the title may be issued with a salvage brand or other cloud on title), 'rebuilt' (issued by an insurance company, body shop, collision center, or licensed rebuilder -- the vehicle insurance may have limits), 'salvage' (issued by an insurance company who pays a claim on the vehicle -- the vehicle incurs some type of loss event such as major damage, theft, or repair).
 
-* `transmission` (string), transmission of the vehicle.
+* `transmission`, transmission of the vehicle, taking the values 'automatic', 'manual' and 'other'.
 
-* `VIN` (string), vehicle identification number.
+* `VIN`, the vehicle identification number.
 
-* `drive` (string), drive of the vehicle.
+* `drive`, the drive of the vehicle, taking the values 'fwd', 'rwd' and '4wd'.
 
-* `size` (string), size of the vehicle.
+* `size`, the size of the vehicle, taking the values 'compact', 'full-size','mid-size' and 'sub-compact'.
 
-* `type` (string), vehicle type.
+* `type`, the vehicle type, taking the values 'bus', 'convertible', 'coupe', 'hatchback', 'mini-van', 'offroad', 'other', 'pickup', 'sedan', 'SUV', 'truck', 'van' and 'wagon'.
+       
+* `paint_color`, the color of the vehicle, taking the values 'black', 'blue', 'brown', 'custom', 'green', 'grey', 'orange', 'purple', 'red', 'silver', 'white' and 'yellow'.
 
-* `paint_color` (string), color of the vehicle.
+* `image_url`, a link to the image of the vehicle.
 
-* `image_url` (string), link to the image of the vehicle.
+* `lat`, the latitude of the vehicle, not precise but very close.
 
-* `lat` (numeric), latitude of the vehicle, not precise but very close.
-
-* `long` (numeric), latitude of the vehicle, not precise but very close.
+* `long`, the latitude of the vehicle, not precise but very close.
 
 ### Source
 
