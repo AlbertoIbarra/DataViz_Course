@@ -2,35 +2,35 @@
 
 ### Introduction
 
-**Cryptocurrencies** are fast becoming rivals to traditional currency across the world. The digital currencies are available to purchase in many different places, accessible to everyone. With retailers accepting various cryptocurrencies, it could be that money, as we know it, is about to go through a major change.
+**Cryptocurrencies** are getting more relevance as rivals to traditional currency in certain parts of the world. The digital currencies are available to purchase in many different places, accessible to everyone. With retailers accepting various cryptocurrencies, it could be that money, as we know it, is may go through a major change.
 
-In addition, the **blockchain** technology on which many cryptocurrencies are based, with its revolutionary distributed digital backbone, has many other promising applications. Implementations of secure, decentralized systems can aid us in conquering organizational issues of trust and security that have plagued our society throughout the ages. Indeed, we can fundamentally disrupt industries core to economies, businesses and social structures, eliminating inefficiency and human error.
+In addition, the **blockchain** technology on which many cryptocurrencies are based, with its revolutionary distributed digital backbone, has many other promising applications. Implementations of secure, decentralized systems can aid us in conquering organizational issues of trust and security that have plagued our society throughout the ages. Indeed, it can disrupt industries core to economies, businesses and social structures, eliminating inefficiency and human error.
 
-**Bitcoin**, created by the elusive Satoshi Nakamoto, was the first cryptocurrency, and it is still the best known. It is the leader in capitalization and trading volume, followed by **Ethereum**. The market cap of Bitcoin accounts for about 37% of the total cryptocurrency market cap.
+**Bitcoin**, created by the elusive Satoshi Nakamoto and released as open-source software in 2009, was the first cryptocurrency, and it is still the best known. It is the leader in capitalization and trading volume, followed by **Ethereum**, founded by Vitalik Buterin in 2015. The market cap of Bitcoin accounts for about 37% of the total cryptocurrency market cap.
 
-The data for this project come in the well known OHLC (Open/High/Low/Close) format, complemented with some additional measures. Collected by Jesse Vent, they cover all cryptocurrencies (1,644), from 2013-04-28 to 2018-06-06.
+The data for this project come in the well known OHLC (Open/High/Low/Close) format, complemented with some additional measures. Collected by Jesse Vent (`https://www.kaggle.com/jessevent/all-crypto-currencies`), they cover all cryptocurrencies (1,644), from 2013-04-28 to 2018-06-06.
 
 ### The data set
 
-The actual data set (`crypto.csv`) has 785,024 rows and 13 columns. The columns are:
+The actual data set has 13 fields and 785,024 records. The fields are:
 
-* `slug`, identifier of the coin, which corrects the duplication created by coins sharing the symbol.
+* `slug`, a unique identifier of the coin, which corrects the duplication created by coins sharing the symbol.
 
-* `symbol`, identifier of the coin, with duplicates.
+* `symbol`, an identifier of the coin, with duplicates.
 
-* `name`, name of the coin.
+* `name`, the name of the coin.
 
-* `date`, date in format yyyy-mm-dd.
+* `date`, the date as yyyy-mm-dd.
 
-* `ranknow`, market capitalization rank by 2018-06-06, from 1 to 1644.
+* `ranknow`, the market capitalization rank by 2018-06-06, from 1 to 1644.
 
-* `open`, the price (USD) of the stock at the beginning of the trading day. It need not be the closing price of the previous trading day.
+* `open`, the price (US dollar) of the stock at the beginning of the trading day. It need not be the closing price of the previous trading day.
 
-* `high`, the highest price (USD) of the stock on that trading day.
+* `high`, the highest price (US dollar) of the stock on that trading day.
 
-* `low`, the lowest price (USD) of the stock on that trading day.
+* `low`, the lowest price (US dollar) of the stock on that trading day.
 
-* `close`, the price (USD) of the stock at closing time.
+* `close`, the price (US dollar) of the stock at closing time.
 
 * `volume`, the amount of the coin that has been traded on that trading day.
 
@@ -42,4 +42,4 @@ The actual data set (`crypto.csv`) has 785,024 rows and 13 columns. The columns 
 
 ### Source
 
-`https://www.kaggle.com/jessevent/all-crypto-currencies`
+Kaggle.
