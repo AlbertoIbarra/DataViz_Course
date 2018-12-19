@@ -10,9 +10,11 @@ Santander provided monthly data of customers behavior data, covering 17 months, 
 
 ### The data set
 
-The actual data set covers 910,592 customers, which is an attractive sample size for a data scientist. It has 27 fileds, containing some data on the customers themselves and information about the products subscribed, such as 'credit card', 'savings account', etc. The fields from 10  to 27 are dummies for having these products.
+The actual data set covers 910,592 customers, which is an attractive sample size for a data scientist. It has 28 fields, containing some data on the customers themselves and information about the products subscribed, such as 'credit card', 'savings account', etc. The fields from 11  to 28 are dummies for having these products.
 
 The fields are:
+
+* `codpers`, a unique customer ID.
 
 * `sexo`, the customer's gender, taking values 'H' (female) and 'V' (male).
 
