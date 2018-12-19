@@ -18,22 +18,58 @@ Other questions of interest would be:
 
 - What products are ordered in the evening?
 
-#### The database
+### The database
 
-The data for this project come from the public release of an anonymized data base containing a sample of over 3 million grocery orders from more than 200,000 Instacart users. The data come in a relational set of files describing customers' orders over time. For each user, between 4 and 100 of their orders are provided, with the sequence of products purchased in each order. Also provided are the weekday and the hour of day the order was placed, and a relative measure of time between orders.
+The data for this project come from the public release of an anonymized data base containing a sample of over 3 million grocery orders from more than 200,000 Instacart users (The Instacart Online Grocery Shopping Dataset 2017). The data come in a relational set of files describing customers' orders over time. For each user, between 4 and 100 of their orders are provided, with the sequence of products purchased in each order. Also provided are the weekday and the hour of day the order was placed, and a relative measure of time between orders.
 
-The database contains five tables. Most of the table and variable names should be self-explanatory.
+The database contains five tables. Note that Instacart has 21 departaments, every department has several aisles, and every aisle contains a collection of products. Example: the product called 'Chocolate Sandwich Cookies' is stored in an aisle called 'cookies cakes', which belongs to a department called 'snacks'.
 
-* The table `aisles` has 2 fields and 134 records. The fields are `aisle_id` and `aisle`.
+* The table `aisles` has 2 fields and 134 records. The fields are 
 
-* The table `departments` has 2 fields and 18 recods. The fields are `department_id` and `department`.
+    + `aisle_id`, a unique aisle ID.
+    
+    + `aisle`, the name of the aisle, such as 'cookies cakes'.
 
-* The table `order_products`, with 4 fields and 3,346,083 records, contains order contents for all cus- tomers. It specifies which products were purchased in each order. The fields are: `order_id`, `product_id`, `add_to_cart_order` and `reordered`. Here, `reordered = 1` indicates that the customer has a previous order that contains the product. Note that some orders have no reordered items.
+* The table `departments` has 2 fields and 21 recods. The fields are:
 
-* The table `orders` has 6 fields and 33,819,106 records. The fields are: order `id`, `user_id`, `order_number`, `order_dow` (day of week), `order_hour_of_day` and `days_since_prior_order`.
+    + `department_id`, a unique department ID.
+    
+    + `department`, the name of the department, such as 'snacks'.
 
-* The table `products` has 4 fields and 49,688 records. The fields are: `product_id`, `product_name`, `aisle_id` and `department_id`.
+* The table `order_products`, with 4 fields and 3,346,083 records, contains order contents for all customers. It specifies which products were purchased in each order. The fields are: 
+
+    + `order_id`, a unique order ID.
+    
+    + `product_id`, a unique product ID.
+    
+    + `add_to_cart_order`, the order in which that product entered in the shopping cart. 
+    
+    + `reordered`, a dummy for the customer having a previous order that contains the product. Note that some orders have no reordered items.
+
+* The table `orders` has 6 fields and 33,819,106 records. The fields are:
+
+    + order `id`, described above.
+    
+    + `user_id`, a unique customer ID.
+    
+    + `order_number`, ordinal for that order in the set of orders of that customer.
+    
+    + `order_dow`, day of the week in which the order was placed.
+    
+    + `order_hour_of_day`, hour of the day in which the order was placed.
+    
+    + `days_since_prior_order`, days elapsed between that order and the preceding order of the same customer.
+
+* The table `products` has 4 fields and 49,688 records. The fields are: 
+
+    + `product_id`, described above.
+    
+    + `product_name`, the name of the product.
+    
+    + `aisle_id`, described above.
+    
+    + `department_id`, described above.
 
 ### Source
 
-The Instacart Online Grocery Shopping Dataset 2017, accessed from `https://www.instacart.com/datasets/grocery-shopping-2017`.
+Instacart.
