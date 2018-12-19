@@ -14,7 +14,7 @@ The actual data set covers 910,592 customers, which is an attractive sample size
 
 The fields are:
 
-* `codpers`, a unique customer ID.
+* `codpers`, a unique customer's ID.
 
 * `sexo`, the customer's gender, taking values 'H' (female) and 'V' (male).
 
