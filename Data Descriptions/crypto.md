@@ -24,7 +24,7 @@ The actual data set has 13 fields and 785,024 records. The fields are:
 
 * `ranknow`, the market capitalization rank by 2018-06-06, from 1 to 1644.
 
-* `open`, the price (US dollar) of the stock at the beginning of the trading day. It need not be the closing price of the previous trading day.
+* `open`, the price (US dollar) of the stock at the beginning of the trading day. It can be different from the closing price of the previous trading day.
 
 * `high`, the highest price (US dollar) of the stock on that trading day.
 
@@ -34,7 +34,7 @@ The actual data set has 13 fields and 785,024 records. The fields are:
 
 * `volume`, the amount of the coin that has been traded on that trading day.
 
-* `market`, market capitalization, obtained by multiplying the circulating supply of coins by the current coin price. It is one way to rank the relative size of a cryptocurrency.
+* `market`, the market capitalization (US dollar), obtained by multiplying the circulating supply of coins by the current coin price. It provides a way to rank the relative size of a cryptocurrency.
 
 * `close_ratio`, calculated as (close - low)/(high - low).
 
