@@ -22,13 +22,15 @@ Airbnb has been releasing and updating data at the Inside Airbnb site (`www.insi
 
 * Which hosts are running a business with multiple listings and where they?
 
-Tasks:
+Or you can undertake more ambitious tasks, such as:
 
-* Modeling prices. Airbnb has an algorithm, called *Smart Pricing*, for suggesting prices to new listings.
+* Modeling prices. Airbnb has an algorithm, called *Smart Pricing*, for suggesting prices to new listings. Can you create a similar tool?
 
-* Predicting occupation.
+* Predicting occupation for future dates.
 
-* Sentiment analysis of the reviews.
+* Perform a sentiment analysis of the reviews.
+
+* Perform a segmentation of the listings based on owners' descriptions.
 
 ### The database
 
