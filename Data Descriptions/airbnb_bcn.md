@@ -1,10 +1,10 @@
-## A sneak Peek into the Airbnb Activity in Barcelona
+## A Sneak Peek into the Airbnb Activity in Barcelona
 
 ### Introduction
 
 Airbnb is a peer-to-peer online marketplace and homestay network, which enables people to list or rent short-term lodging in residential properties, with the cost of such accommodation set by the property owner. The company receives percentage service fees from both guests and hosts in conjunction with every booking. It has over 2,000,000 listings in 34,000 cities and 191 countries.
 
-Since 2008, guests and hosts have used Airbnb to travel in a more unique, personalized way. Instead of waking to overlooked "Do not disturb" signs, Airbnb travelers find themselves rising with the birds in a whimsical treehouse, having their morning coffee on the deck of a houseboat, or cooking a shared regional breakfast with their hosts.
+Since 2008, guests and hosts have used Airbnb to travel in a more unique, personalized way. Instead of waking to overlooked 'Do not disturb' signs, Airbnb travelers find themselves rising with the birds in a whimsical treehouse, having their morning coffee on the deck of a houseboat, or cooking a shared regional breakfast with their hosts.
 
 Questions:
 
@@ -14,7 +14,7 @@ Questions:
 
 * Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Barcelona?
 
-* How many listings are in my neighbourhood and where are they?
+* How many listings are in that particular neighbourhood and where are they?
 
 * How many houses and apartments are being rented out frequently to tourists and not to long-term residents?
 
