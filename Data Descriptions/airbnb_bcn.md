@@ -46,23 +46,19 @@ The database is integrated by four tables:
 
     + `price`, the listing's price in US dollars. The price you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
 
-* The table `listings` contains detailed listings in Barcelona. The fields are:
+* The table `listings` contains detailed listings in Barcelona. The language in the descriptions is typically English or Spanish (with exceptions). The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines (in Spanish words such as 'habitación') The fields are:
 
-    + `id`
+    + `listing_id`, described above.
 
-    + `listing_url`
+    + `listing_url`, the listing's URL.
 
-    + `scrape_id`
+    + `name`, the listing's name. It is a minimal description,  intended to be appealing, such as 'Centric Bohemian next Ramblas&Macba'.
 
-    + `last_scraped`
+    + `summary`, a longer description.
 
-    + `name`
+    + `space`, another longer description, focusing on the space available, the comfort and the conveniences. Redundancy with the preceding field is typical.
 
-    + `summary`
-
-    + `space`
-
-    + `description`.
+    + `description`, the longest description, also subject to redundancy.
 
     + `experiences_offered`.
 
