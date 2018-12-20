@@ -34,17 +34,17 @@ Or you can undertake more ambitious tasks, such as:
 
 ### The database
 
-The database is integrated by three tables:
+The database is integrated by four tables:
 
-* The table `calendar` contains detailed calendar data for listings in Barcelona. The fields are:
+* The table `calendar` contains detailed calendar data for listings in Barcelona. There are 4 fields and 6,443,345 records. The fields are:
 
-    + `listing_id`.
+    + `listing_id`, a unique listing's ID. 
 
-    + `date`.
+    + `date`, the date, as yyyy-mm-dd.
 
-    + `available`.
+    + `available`, a dummy for being available on that date.
 
-    + `price`.
+    + `price`, the listing's price in US dollars. The price you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
 
 * The table `listings` contains detailed listings in Barcelona. The fields are:
 
