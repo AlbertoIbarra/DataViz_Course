@@ -8,15 +8,15 @@ To get ideas on how to create a robust prediction model, Rossmann has released d
 
 ### The database
 
-The historical sales data cover for 1,115 Rossmann stores, from January 2013 to July 2015. Note that some stores in the database were temporarily closed for refurbishment.
+The historical sales data cover 1,115 Rossmann stores, from January 2013 to July 2015. Note that some stores in the database were temporarily closed for refurbishment.
 
-* The table `sales` contains sales data. The fields are:
+* The table `sales` contains daily sales data for every store. It has 1,017,209 records. The fields are:
 
-    + `Store`, a unique Id for each store.
+    + `Store`, a unique ID for each store.
 
-    + `DayOfWeek`, day of the week (Monday = 1, Sunday = 7).
+    + `DayOfWeek`, the day of the week (Monday = 1, Sunday = 7).
 
-    + `Date`, as yyyy-mm-dd.
+    + `Date`, the date, as yyyy-mm-dd.
 
     + `Sales`, the turnover for any given day, in euros.
 
@@ -32,11 +32,11 @@ The historical sales data cover for 1,115 Rossmann stores, from January 2013 to 
 
 * The table `store` contains supplemental information about the stores. The fields are:
 
-    +  `StoreType`, differentiating four different store models. The values are: a, b, c and d.
+    +  `StoreType`, differentiating four different store models. It takes values 'a', 'b', 'c' and 'd'.
 
-    + `Assortment`, describing the assortment level. The values are: a = basic, b = extra and c = extended.
+    + `Assortment`, describing the assortment level. It takes values 'a' (basic), 'b' (extra) and 'c' (extended).
 
-    + `CompetitionDistance`, the distance in meters to the nearest competitor store.
+    + `CompetitionDistance`, the distance to the nearest competitor store, in meters.
 
     + `CompetitionOpenSinceMonth`, the approximate month of the time the nearest competitor was opened.
 
@@ -48,7 +48,7 @@ The historical sales data cover for 1,115 Rossmann stores, from January 2013 to 
 
     + `Promo2SinceYear`, the year when the store started participating in `Promo2`.
 
-    + `PromoInterval`, the consecutive intervals `Promo2` is started, naming the months the promotion is started anew. For instance,  'Feb/May/Aug/Nov' means each round starts in February, May, August, November of any given year for that store.
+    + `Promo2Interval`, the consecutive intervals `Promo2` is started, naming the months the promotion is started anew. For instance,  'Feb/May/Aug/Nov' means that each round starts in February, May, August, November of any given year for that store.
 
 ### Source
 
