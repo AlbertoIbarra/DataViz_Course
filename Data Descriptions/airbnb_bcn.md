@@ -6,7 +6,7 @@ Airbnb is a peer-to-peer online marketplace and homestay network, which enables 
 
 Since 2008, guests and hosts have used Airbnb to travel in a more unique, personalized way. Instead of waking to overlooked 'Do not disturb' signs, Airbnb travelers find themselves rising with the birds in a whimsical treehouse, having their morning coffee on the deck of a houseboat, or cooking a shared regional breakfast with their hosts.
 
-Questions:
+Airbnb has been releasing and updating data at the Inside Airbnb site (`www.insideairbnb.com`). The last update (November 2018) covers 84 areas, most of them in US and Europe. In this project, we use data from Barcelona, posted on April 8th, 2018. Some interesting questions that can addressed with these data are:
 
 * Can you describe the vibe of each Barcelona neighborhood using listing descriptions?
 
