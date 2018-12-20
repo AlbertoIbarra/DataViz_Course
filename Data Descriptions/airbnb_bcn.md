@@ -60,8 +60,6 @@ The database is integrated by four tables:
 
     + `description`, the longest description, also subject to redundancy.
 
-    + `experiences_offered`.
-
     + `neighborhood_overview`
 
     + `notes`
@@ -236,17 +234,17 @@ The database is integrated by four tables:
 
 * The table `reviews` contains detailed reviews for listings in Barcelona. The fields are:
 
-    + `listing_id`
+    + `listing_id`, described above.
 
-    + `id`
+    + `review_id`, a unique review's ID.
 
-    + `date`
+    + `date`, the review's date, as yyyy-mm-dd.
 
-    + `reviewer_id`
+    + `reviewer_id`, a unique author's ID.
 
-    + `reviewer_name`
+    + `reviewer_name`, the author's name.
 
-    + `comments`.
+    + `comments`, the text of the review..
 
 ### Source
 
