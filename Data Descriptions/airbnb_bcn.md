@@ -62,7 +62,7 @@ The database is integrated by four tables:
 
     + `notes`, remarks posted by the host, such as 'no parties allowed'. There are many missing values in this field.
 
-    + `transit`, information about the public transportaion in the are. There are many missing values in this field.
+    + `transit`, information about the public transportation in the area. There are many missing values in this field.
 
     + `access`, restrictions to the use of the space and rules about it. There are many missing values in this field.
 
