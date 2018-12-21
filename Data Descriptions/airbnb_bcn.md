@@ -82,17 +82,13 @@ The database is integrated by four tables:
 
     + `host_response_time`, taking the values 'a few days or more', 'N/A', 'within a day', 'within a few hours' and 'within an hour', with a few missing values. 
 
-    + `host_response_rate`
+    + `host_response_rate`, percentage of new inquiries and reservation requests the host responded to (by either accepting/pre-approving or declining) within 24 hours in the past 30 days.
 
-    + `host_acceptance_rate`
+    + `host_acceptance_rate`, combined percentage of reservation requests the host accepted and booking inquiries he/she pre-approved or responded to with a Special Offer.
 
-    + `host_is_superhost`
+    + `host_is_superhost`, a dummy for being a Superhost. THe minimum requirements are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
 
-    + `host_thumbnail_url`
-
-    + `host_picture_url`
-
-    + `host_neighbourhood`
+    + `host_neighbourhood`, supplemental information for the field `host_loaction`.
 
     + `host_listings_count`
 
