@@ -38,7 +38,7 @@ The database is integrated by four tables:
 
 * The table `calendar` contains detailed calendar data for listings in Barcelona. There are 4 fields and 6,443,345 records. The fields are:
 
-    + `listing_id`, a unique listing's ID. 
+    + `listing_id`, a unique listing's ID. An active listing is a property listed on Airbnb. Listings may include entire homes or apartments, private rooms or shared spaces. 
 
     + `date`, the date, as yyyy-mm-dd.
 
@@ -46,11 +46,9 @@ The database is integrated by four tables:
 
     + `price`, the listing's price in US dollars. The price you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
 
-* The table `listings` contains detailed listings in Barcelona. The language in the descriptions is typically English or Spanish (with exceptions). The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines (in Spanish words such as 'habitación') The fields are:
+* The table `listings` contains detailed listings in Barcelona. The language in the descriptions is typically English or Spanish (with exceptions). The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines (in Spanish words such as 'habitación'). Some fields, in particular all the fields containing URL's, have been dropped. The remaining fields are:
 
     + `listing_id`, described above.
-
-    + `listing_url`, the listing's URL.
 
     + `name`, the listing's name. It is a minimal description,  intended to be appealing, such as 'Centric Bohemian next Ramblas&Macba'.
 
@@ -60,39 +58,29 @@ The database is integrated by four tables:
 
     + `description`, the longest description, also subject to redundancy.
 
-    + `neighborhood_overview`
+    + `neighborhood_overview`, a description of the area, not corresponding to the neighborhood as listed in the table `neighborhoods`, which is a classification created by the local authorities.
 
-    + `notes`
+    + `notes`, remarks posted by the host, such as 'no parties allowed'. There are many missing values in this field.
 
-    + `transit`
+    + `transit`, information about the public transportaion in the are. There are many missing values in this field.
 
-    + `access`
+    + `access`, restrictions to the use of the space and rules about it. There are many missing values in this field.
 
-    + `interaction`
+    + `interaction`, details about the interaction with the host. There are many missing values in this field.
 
-    + `house_rules`
+    + `house_rules`, rules such as 'forbidden to smoke', or respect the tranquility of the neighbors'. There are many missing values in this field.
+    
+    + `host_id`, a unique host's ID.
 
-    + `thumbnail_url`
+    + `host_name`, the host's first name.
 
-    + `medium_url`
+    + `host_since`, date the host started listing that property, as yyyy-mm-dd.
 
-    + `picture_url`
+    + `host_location`, a town or country, not necessarily close to the property listed.
 
-    + `xl_picture_url`
+    + `host_about`, bio information about the host, with many missing values and lots of diversity.
 
-    + `host_id`
-
-    + `host_url`
-
-    + `host_name`
-
-    + `host_since`
-
-    + `host_location`
-
-    + `host_about`
-
-    + `host_response_time`
+    + `host_response_time`, taking the values 'a few days or more', 'N/A', 'within a day', 'within a few hours' and 'within an hour', with a few missing values. 
 
     + `host_response_rate`
 
