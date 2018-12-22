@@ -58,7 +58,7 @@ The database is integrated by four tables:
 
     + `description`, the longest description, also subject to redundancy.
 
-    + `neighborhood_overview`, a description of the area, not corresponding to the neighborhood as listed in the table `neighborhoods`, which is a classification created by the local authorities.
+    + `area_overview`, a description of the area.
 
     + `notes`, remarks posted by the host, such as 'no parties allowed'. There are many missing values in this field.
 
@@ -88,29 +88,15 @@ The database is integrated by four tables:
 
     + `host_is_superhost`, a dummy for being a Superhost. THe minimum requirements are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
 
-    + `host_neighbourhood`, supplemental information for the field `host_loaction`.
+    + `host_listings_count`, number of Airbnb listings of that host. It can be more than one hundred.
 
-    + `host_listings_count`
+    + `host_verifications`, the verification chanels. Example: ['email', 'phone', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
 
-    + `host_total_listings_count`
+    + `host_has_profile_pic`, dummy for the host including a picture in his/her profile, with a few missing values.
 
-    + `host_verifications`
-
-    + `host_has_profile_pic`
-
-    + `host_identity_verified`
-
-    + `street`
-
-    + `neighbourhood`
-
-    + `neighbourhood_cleansed`
-
-    + `neighbourhood_group_cleansed`
-
-    + `city`
-
-    + `state`
+    + `host_identity_verified`, dummy for the host identified been verified, with a few missing values.
+    
+    + `neighborhood`
 
     + `zipcode`
 
