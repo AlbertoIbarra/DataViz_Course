@@ -60,15 +60,15 @@ The database is integrated by four tables:
 
     + `area_overview`, a description of the area.
 
-    + `notes`, remarks posted by the host, such as 'no parties allowed'. There are many missing values in this field.
+    + `notes`, remarks posted by the host, such as 'no parties allowed', with many missing values.
 
-    + `transit`, information about the public transportation in the area. There are many missing values in this field.
+    + `transit`, information about the public transportation in the area, with many missing values.
 
-    + `access`, restrictions to the use of the space and rules about it. There are many missing values in this field.
+    + `access`, restrictions to the use of the space and rules about it, with many missing values.
 
-    + `interaction`, details about the interaction with the host. There are many missing values in this field.
+    + `interaction`, details about the interaction with the host, with many missing values.
 
-    + `house_rules`, rules such as 'forbidden to smoke', or respect the tranquility of the neighbors'. There are many missing values in this field.
+    + `house_rules`, rules such as 'forbidden to smoke', or respect the tranquility of the neighbors', with many missing values.
     
     + `host_id`, a unique host's ID.
 
@@ -132,11 +132,11 @@ The database is integrated by four tables:
 
     + `security_deposit` the security deposit in US dollars, with many missing values. Many hosts request a security deposit, but the money is not touched unless the host files a claim and Airbnb agrees to the charges.
 
-    + `cleaning_fee`
+    + `cleaning_fee`, the cleaning fee in US dollars, with many missing values. Hosts have the option of charging this in order to clean their space for a guest.
 
-    + `guests_included`
+    + `guests_included`, maximum number of guests allowed.
 
-    + `extra_people`
+    + `extra_people`, extra guest fee in US dollars.
 
     + `minimum_nights`
 
