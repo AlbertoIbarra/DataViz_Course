@@ -88,7 +88,7 @@ The database is integrated by four tables:
 
     + `host_is_superhost`, a dummy for being a Superhost. THe minimum requirements are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
 
-    + `host_listings_count`, number of Airbnb listings of that host. It can be more than one hundred.
+    + `host_listings_count`, number of Airbnb listings of that host.
 
     + `host_verifications`, the verification chanels. Example: ['email', 'phone', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
 
@@ -96,17 +96,9 @@ The database is integrated by four tables:
 
     + `host_identity_verified`, dummy for the host identified been verified, with a few missing values.
     
-    + `neighborhood`
+    + `neighborhood`, the neighborhood where the property listed is located. The neighborhoods, listed in the table `neighborhoods`, are taken from city or open source GIS files.
 
-    + `zipcode`
-
-    + `market`
-
-    + `smart_location`
-
-    + `country_code`
-
-    + `country`
+    + `zipcode`, the zipcode of the property listed.
 
     + `latitude`
 
