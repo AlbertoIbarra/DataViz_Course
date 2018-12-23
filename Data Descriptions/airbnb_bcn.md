@@ -6,7 +6,7 @@ Airbnb is a peer-to-peer online marketplace and homestay network, which enables 
 
 Since 2008, guests and hosts have used Airbnb to travel in a more unique, personalized way. Instead of waking to overlooked 'Do not disturb' signs, Airbnb travelers find themselves rising with the birds in a whimsical treehouse, having their morning coffee on the deck of a houseboat, or cooking a shared regional breakfast with their hosts.
 
-Airbnb has been releasing and updating data at the Inside Airbnb site (`www.insideairbnb.com`). The last update (November 2018) covers 84 areas, most of them in US and Europe. In this project, we use data from Barcelona, posted on April 8th, 2018. Some interesting questions that can addressed with these data are:
+Airbnb has been releasing and updating data at the Inside Airbnb site (`www.insideairbnb.com`). The last update (November 2018) covers 84 areas, most of them in US and Europe. In this project, we use data from Barcelona, captured on April 8th, 2018. Some interesting questions that can addressed with these data are:
 
 * Can you describe the vibe of each Barcelona neighborhood using listing descriptions?
 
@@ -138,11 +138,7 @@ The database is integrated by four tables:
 
     + `extra_people`, extra guest fee in US dollars.
 
-    + `minimum_nights`
-
-    + `maximum_nights`
-
-    + `calendar_updated`
+    + `calendar_updated`, the last time the calendar of the listing has been updated, taking values such as 'never', 'today', 'yesterday', etc. Note that the data from the table `calendar` are valid only for the days the calendar is up to date.  
 
     + `has_availability`
 
@@ -154,35 +150,27 @@ The database is integrated by four tables:
 
     + `availability_365`
 
-    + `calendar_last_scraped`
+    + `number_of_reviews`, number of reviews of this listings that have been posted.
+    
+    + `first_review`, date of the first review, as yyyy-mm-dd.
 
-    + `number_of_reviews`
+    + `last_review`, date of the last review, as yyyy-mm-dd.
 
-    + `first_review`
+    + `review_scores_rating`, average reviewers' rating of overall experience (what was your guest’s overall experience?). Range 1-100, with many missing values.
 
-    + `last_review`
+    + `review_scores_accuracy`, average reviewers' rating of accuracy (how accurately did your listing page represent your space?). Range 1-10, with many missing values.
 
-    + `review_scores_rating`
+    + `review_scores_cleanliness`, average reviewers' rating of cleanliness (did your guests feel that your space was clean and tidy?). Range 1-10, with many missing values.
 
-    + `review_scores_accuracy`
+    + `review_scores_checkin`, average reviewers' rating of arrival (how smoothly did their check-in go?). Range 1-10, with many missing values.
 
-    + `review_scores_cleanliness`
+    + `review_scores_communication`, average reviewers' rating of communication (how well did you communicate with your guest before and during their stay?). Range 1-10, with many missing values.
 
-    + `review_scores_checkin`
+    + `review_scores_location`, average reviewers' rating of location (how did guests feel about your neighborhood?). Range 1-10, with many missing values.
 
-    + `review_scores_communication`
+    + `review_scores_value`, average reviewers' rating of value (did your guest feel your listing provided good value for the price?). Range 1-10, with many missing values.
 
-    + `review_scores_location`
-
-    + `review_scores_value`
-
-    + `requires_license`
-
-    + `license`
-
-    + `jurisdiction_names`
-
-    + `instant_bookable`
+    + `instant_bookable`, a dummy for Instant Book listings. Instant Book listings do not require approval from the host before they can be booked. 
 
     + `cancellation_policy`
 
