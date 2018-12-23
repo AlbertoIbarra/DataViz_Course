@@ -88,7 +88,7 @@ The database is integrated by four tables:
 
     + `host_is_superhost`, a dummy for being a Superhost. The minimum requirements for Superhosts are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
 
-    + `host_listings_count`, number of Airbnb listings of that host.
+    + `host_listings_count`, number of listings of that host in Barcelona.
 
     + `host_verifications`, a collection within square brackets, such as ['email', 'phone', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
 
@@ -140,8 +140,6 @@ The database is integrated by four tables:
 
     + `calendar_updated`, the last time the calendar of the listing has been updated, taking values such as 'never', 'today', 'yesterday', etc. Note that the data from the table `calendar` are valid only for the days the calendar is up to date.  
 
-    + `has_availability`
-
     + `availability_30`
 
     + `availability_60`
@@ -172,15 +170,13 @@ The database is integrated by four tables:
 
     + `instant_bookable`, a dummy for Instant Book listings. Instant Book listings do not require approval from the host before they can be booked. 
 
-    + `cancellation_policy`
+    + `cancellation_policy`, cancellation policy, taking values 'flexible' (full refund within limited period), 'moderate' (full refund within limited period), 'strict' (full refund if cancellation is within 48 hours of booking), 'super_strict_30' ( 50% refund up until 30 days prior to check in), 'super_strict_60' (50% refund up until 60 days prior to check in) and 'long term' (first month not refundable, 30 day notice for cancellation).
 
-    + `require_guest_profile_picture`
+    + `require_guest_profile_picture`, a dummy for requiring a guest profile picture.
 
-    + `require_guest_phone_verification`
+    + `require_guest_phone_verification`, a dummy for requiring the guest phone verification.
 
-    + `calculated_host_listings_count`
-
-    + `reviews_per_month`.
+    + `reviews_per_month`, average number of reviews per month, with many missing values.
 
 * The table `reviews` contains detailed reviews for listings in Barcelona. The fields are:
 
@@ -194,7 +190,7 @@ The database is integrated by four tables:
 
     + `reviewer_name`, the author's name.
 
-    + `comments`, the text of the review..
+    + `comments`, the text of the review.
 
 ### Source
 
