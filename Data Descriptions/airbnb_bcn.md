@@ -90,7 +90,7 @@ The database is integrated by four tables:
 
     + `host_listings_count`, number of Airbnb listings of that host.
 
-    + `host_verifications`, the verification chanels. Example: ['email', 'phone', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
+    + `host_verifications`, a collection within square brackets, such as ['email', 'phone', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
 
     + `host_has_profile_pic`, dummy for the host including a picture in his/her profile, with a few missing values.
 
@@ -120,9 +120,9 @@ The database is integrated by four tables:
 
     + `bed_type`, taking values 'Airbed', 'Couch', 'Futon Pull-out Sofa' and 'Real Bed'.
 
-    + `amenities`
+    + `amenities`, a collection within curly braces, such as {TV,Internet,Wireless Internet,Air conditioning,Kitchen,Elevator in building,Buzzer/wireless intercom,Heating,Washer,Essentials,Shampoo}.
 
-    + `square_feet`
+    + `square_feet`, square footage of the listing, with many missing values. 
 
     + `price`
 
