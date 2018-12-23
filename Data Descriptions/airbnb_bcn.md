@@ -124,13 +124,13 @@ The database is integrated by four tables:
 
     + `square_feet`, square footage of the listing, with many missing values. 
 
-    + `price`
+    + `price`, described above.
 
-    + `weekly_price`
+    + `weekly_price`, the listing's weekly price in US dollars. Mostly missing.
 
-    + `monthly_price`
+    + `monthly_price`, the listing's weekly price in US dollars. Mostly missing.
 
-    + `security_deposit`
+    + `security_deposit` the security deposit in US dollars, with many missing values. Many hosts request a security deposit, but the money is not touched unless the host files a claim and Airbnb agrees to the charges.
 
     + `cleaning_fee`
 
