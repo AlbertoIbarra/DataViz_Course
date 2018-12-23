@@ -50,9 +50,9 @@ The database is integrated by four tables:
 
     + `listing_id`, described above.
 
-    + `name`, the listing's name. It is a minimal description,  intended to be appealing, such as 'Centric Bohemian next Ramblas&Macba'.
+    + `name`, the listing's name. It is a minimal description (maximum 35 characters) of the place, intended to be appealing, such as 'Centric Bohemian next Ramblas&Macba'.
 
-    + `summary`, a longer description.
+    + `summary`, a longer description (maximum 250 characters).
 
     + `space`, another longer description, focusing on the space available, the comfort and the conveniences. Redundancy with the preceding field is typical.
 
@@ -86,7 +86,7 @@ The database is integrated by four tables:
 
     + `host_acceptance_rate`, combined percentage of reservation requests the host accepted and booking inquiries he/she pre-approved or responded to with a Special Offer.
 
-    + `host_is_superhost`, a dummy for being a Superhost. THe minimum requirements are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
+    + `host_is_superhost`, a dummy for being a Superhost. The minimum requirements for Superhosts are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
 
     + `host_listings_count`, number of Airbnb listings of that host.
 
@@ -98,27 +98,27 @@ The database is integrated by four tables:
     
     + `neighborhood`, the neighborhood where the property listed is located. The neighborhoods, listed in the table `neighborhoods`, are taken from city or open source GIS files.
 
-    + `zipcode`, the zipcode of the property listed.
+    + `zipcode`, the listing’s zipcode.
 
-    + `latitude`
+    + `latitude`, the listing’s latitude, in degrees.
 
-    + `longitude`
+    + `longitude`, the listing’s longitude, in degrees.
 
-    + `is_location_exact`
+    + `is_location_exact`, a dummy for the exact listing’s location being shown on the map. At Airbnb, the host chooses between showing the general area of the listing or placing a small circular pin indicating the location with great accuracy.
 
-    + `property_type`
+    + `property_type`, the type of property listed. Typically 'Appartment', 'Bed & Breakfast' or 'House', but it can also be 'Boat', 'Loft', or others.
 
-    + `room_type`
+    + `room_type`, taking values 'Entire home/apt', 'Private room' and 'Shared room'.
 
-    + `accommodates`
+    + `accommodates`, the maximum number of people that can comfortably fit in the listing.
 
-    + `bathrooms`
+    + `bathrooms`, the number of available bathrooms. With only a sink and a toilet, but no no shower or bathtub, the room counts as 0.5.
 
-    + `bedrooms`
+    + `bedrooms`, the number of available bedrooms.
 
-    + `beds`
+    + `beds`, the number of available beds.
 
-    + `bed_type`
+    + `bed_type`, taking values 'Airbed', 'Couch', 'Futon Pull-out Sofa' and 'Real Bed'.
 
     + `amenities`
 
