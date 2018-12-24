@@ -96,7 +96,7 @@ The database is integrated by four tables:
 
     + `host_identity_verified`, dummy for the host identified been verified, with a few missing values.
     
-    + `neighborhood`, the neighborhood where the property listed is located. The neighborhoods, listed in the table `neighborhoods`, are taken from city or open source GIS files.
+    + `neighbourhood`, the neighbourhood where the property listed is located. The neighbourhoods, listed in the table `neighbourhoods`, are taken from city or open source GIS files.
 
     + `zipcode`, the listing’s zipcode.
 
@@ -178,7 +178,13 @@ The database is integrated by four tables:
 
     + `reviews_per_month`, average number of reviews per month, with many missing values.
 
-* The table `reviews` contains detailed reviews for listings in Barcelona. The fields are:
+* The table `neighbourhoods` is a list of the 73 neighbourhoods of Barcelona. It has two fields:
+
+    + `neighbourhood_group`, 10 groups of neighbourhoods.
+    
+    + `neighbourhood`, the neighbourhoods, as defined by the local authority. 
+
+* The table `reviews` contains 411,371 detailed reviews for listings in Barcelona. The fields are:
 
     + `listing_id`, described above.
 
