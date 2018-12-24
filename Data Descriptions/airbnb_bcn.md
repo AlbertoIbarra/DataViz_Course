@@ -44,9 +44,9 @@ The database is integrated by four tables:
 
     + `available`, a dummy for being available on that date.
 
-    + `price`, the listing's price in US dollars. The price you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
+    + `price`, the listing's price on that date in US dollars, missing when the listing is not available. The price you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
 
-* The table `listings` contains detailed listings in Barcelona. The language in the descriptions is typically English or Spanish (with exceptions). The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines (in Spanish words such as 'habitación'). Some fields, in particular all the fields containing URL's, have been dropped. The remaining fields are:
+* The table `listings` contains 17,653 detailed listings in Barcelona. The language in the descriptions is typically English or Spanish (with exceptions). The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines (in Spanish words such as 'habitación'). Some fields, in particular all the fields containing URL's, have been dropped. The remaining 61 fields are:
 
     + `listing_id`, described above.
 
@@ -96,7 +96,7 @@ The database is integrated by four tables:
 
     + `host_identity_verified`, dummy for the host identified been verified, with a few missing values.
     
-    + `neighbourhood`, the neighbourhood where the property listed is located. The neighbourhoods, listed in the table `neighbourhoods`, are taken from city or open source GIS files.
+    + `neighbourhood`, the neighbourhood of the listing. The neighbourhoods, listed in the table `neighbourhoods`, are taken from city or open source GIS files.
 
     + `zipcode`, the listing’s zipcode.
 
@@ -140,14 +140,6 @@ The database is integrated by four tables:
 
     + `calendar_updated`, the last time the calendar of the listing has been updated, taking values such as 'never', 'today', 'yesterday', etc. Note that the data from the table `calendar` are valid only for the days the calendar is up to date.  
 
-    + `availability_30`
-
-    + `availability_60`
-
-    + `availability_90`
-
-    + `availability_365`
-
     + `number_of_reviews`, number of reviews of this listings that have been posted.
     
     + `first_review`, date of the first review, as yyyy-mm-dd.
@@ -182,7 +174,7 @@ The database is integrated by four tables:
 
     + `neighbourhood_group`, 10 groups of neighbourhoods.
     
-    + `neighbourhood`, the neighbourhoods, as defined by the local authority. 
+    + `neighbourhood`, described above. 
 
 * The table `reviews` contains 411,371 detailed reviews for listings in Barcelona. The fields are:
 
