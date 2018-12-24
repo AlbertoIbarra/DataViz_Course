@@ -4,243 +4,189 @@
 
 Airbnb is a peer-to-peer online marketplace and homestay network, which enables people to list or rent short-term lodging in residential properties, with the cost of such accommodation set by the property owner. The company receives percentage service fees from both guests and hosts in conjunction with every booking. It has over 2,000,000 listings in 34,000 cities and 191 countries.
 
-Since 2008, guests and hosts have used Airbnb to travel in a more unique, personalized way. Instead of waking to overlooked "Do not disturb" signs, Airbnb travelers find themselves rising with the birds in a whimsical treehouse, having their morning coffee on the deck of a houseboat, or cooking a shared regional breakfast with their hosts.
+Since 2008, guests and hosts have used Airbnb to travel in a more unique, personalized way. Instead of waking to overlooked 'Do not disturb' signs, Airbnb travelers find themselves rising with the birds in a whimsical treehouse, having their morning coffee on the deck of a houseboat, or cooking a shared regional breakfast with their hosts.
 
-Questions:
+Airbnb has been releasing and updating data at the Inside Airbnb site (`www.insideairbnb.com`). The last update (November 2018) covers 84 areas, most of them in US and Europe. In this project, we use data from Boston, captured on April 8th, 2018. Some interesting questions that can addressed with these data are:
 
-* Can you describe the vibe of each Barcelona neighborhood using listing descriptions?
+* Can you describe the vibe of each Boston neighborhood using listing descriptions?
 
 * What are the busiest times of the year to visit Boston? By how much do prices spike?
 
 * Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston?
 
-Tasks:
+* How many listings are in that particular neighbourhood and where are they?
 
-* Modelling prices. Airbnb has an algorithm, called *Smart Pricing*, for suggesting prices to new listings.
+* How many houses and apartments are being rented out frequently to tourists and not to long-term residents?
 
-* Predicting occupation.
+* How much are hosts making from renting to tourists (compare that to long-term rentals)?
 
-* Sentiment analysis of the reviews.
+* Which hosts are running a business with multiple listings and where they?
+
+Or you can undertake more ambitious tasks, such as:
+
+* Modeling prices. Airbnb has an algorithm, called *Smart Pricing*, for suggesting prices to new listings. Can you create a similar tool?
+
+* Predicting occupation for future dates.
+
+* Perform a sentiment analysis of the reviews.
+
+* Perform a segmentation of the listings based on owners' descriptions.
 
 ### The database
 
-The database is integrated by three tables:
+The database is integrated by four tables:
 
-* The table `calendar` contains detailed calendar data for listings in Boston. The fields are:
+* The table `calendar` contains detailed calendar data for listings in Boston. There are 4 fields and 1,308,890 records. The fields are:
 
-    + `listing_id`.
+    + `listing_id`, a unique listing's ID. An active listing is a property listed on Airbnb. Listings may include entire homes or apartments, private rooms or shared spaces. 
 
-    + `date`.
+    + `date`, the date, as yyyy-mm-dd.
 
-    + `available`.
+    + `available`, a dummy for being available on that date.
 
-    + `price`.
+    + `price`, the listing's price on that date in US dollars, missing when the listing is not available. The price you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
 
-* The table `listings` contains detailed listings in Barcelona. The fields are:
+* The table `listings` contains 3,585 detailed listings in Boston. The language in the descriptions is typically English. The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines. Some fields, in particular all the fields containing URL's, have been dropped. The remaining 61 fields are:
 
-    + `id`
+    + `listing_id`, described above.
 
-    + `listing_url`
+    + `name`, the listing's name. It is a minimal description (maximum 35 characters) of the place, intended to be appealing, such as 'Sunny Bungalow in the City'.
 
-    + `scrape_id`
+    + `summary`, a longer description (maximum 250 characters).
 
-    + `last_scraped`
+    + `space`, another longer description, focusing on the space available, the comfort and the conveniences. Redundancy with the preceding field is typical.
 
-    + `name`
+    + `description`, the longest description, also subject to redundancy.
 
-    + `summary`
+    + `area_overview`, a description of the area.
 
-    + `space`
+    + `notes`, remarks posted by the host, such as 'no parties allowed', with many missing values.
 
-    + `description`.
+    + `transit`, information about the public transportation in the area, with many missing values.
 
-    + `experiences_offered`.
+    + `access`, restrictions to the use of the space and rules about it, with many missing values.
 
-    + `neighborhood_overview`
+    + `interaction`, details about the interaction with the host, with many missing values.
 
-    + `notes`
+    + `house_rules`, rules such as 'forbidden to smoke', or respect the tranquility of the neighbors', with many missing values.
+    
+    + `host_id`, a unique host's ID.
 
-    + `transit`
+    + `host_name`, the host's first name.
 
-    + `access`
+    + `host_since`, date the host started listing that property, as yyyy-mm-dd.
 
-    + `interaction`
+    + `host_location`, a town, state or country, not necessarily close to the property listed.
 
-    + `house_rules`
+    + `host_about`, bio information about the host, with many missing values and lots of diversity.
 
-    + `thumbnail_url`
+    + `host_response_time`, taking the values 'a few days or more', 'N/A', 'within a day', 'within a few hours' and 'within an hour', with a few missing values. 
 
-    + `medium_url`
+    + `host_response_rate`, percentage of new inquiries and reservation requests the host responded to (by either accepting/pre-approving or declining) within 24 hours in the past 30 days. Many missing values, as 'N/A'.
 
-    + `picture_url`
+    + `host_acceptance_rate`, combined percentage of reservation requests the host accepted and booking inquiries he/she pre-approved or responded to with a Special Offer. Many missing values, as 'N/A'.
 
-    + `xl_picture_url`
+    + `host_is_superhost`, a dummy for being a Superhost. The minimum requirements for Superhosts are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
 
-    + `host_id`
+    + `host_listings_count`, number of listings of that host in Boston.
 
-    + `host_url`
+    + `host_verifications`, a collection within square brackets, such as ['email', 'phone', 'facebook', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
 
-    + `host_name`
+    + `host_has_profile_pic`, dummy for the host including a picture in his/her profile, with a few missing values.
 
-    + `host_since`
+    + `host_identity_verified`, dummy for the host identified been verified, with a few missing values.
+    
+    + `neighbourhood`, the neighbourhood of the listing. The neighbourhoods, listed in the table `neighbourhoods`, are taken from city or open source GIS files.
 
-    + `host_location`
+    + `zipcode`, the listing’s zipcode.
 
-    + `host_about`
+    + `latitude`, the listing’s latitude, in degrees.
 
-    + `host_response_time`
+    + `longitude`, the listing’s longitude, in degrees.
 
-    + `host_response_rate`
+    + `is_location_exact`, a dummy for the exact listing’s location being shown on the map. At Airbnb, the host chooses between showing the general area of the listing or placing a small circular pin indicating the location with great accuracy.
 
-    + `host_acceptance_rate`
+    + `property_type`, the type of property listed. Typically 'Appartment', 'Bed & Breakfast' or 'House', but it can also be 'Boat', 'Loft', or others.
 
-    + `host_is_superhost`
+    + `room_type`, taking values 'Entire home/apt', 'Private room' and 'Shared room'.
 
-    + `host_thumbnail_url`
+    + `accommodates`, the maximum number of people that can comfortably fit in the listing.
 
-    + `host_picture_url`
+    + `bathrooms`, the number of available bathrooms. With only a sink and a toilet, but no no shower or bathtub, the room counts as 0.5.
 
-    + `host_neighbourhood`
+    + `bedrooms`, the number of available bedrooms.
 
-    + `host_listings_count`
+    + `beds`, the number of available beds.
 
-    + `host_total_listings_count`
+    + `bed_type`, taking values 'Airbed', 'Couch', 'Futon Pull-out Sofa' and 'Real Bed'.
 
-    + `host_verifications`
+    + `amenities`, a collection within curly braces, such as {TV,Wireless Internet,Kitchen,Free Parking on Premises,Pets live on this property,Dog(s),Heating,Family/Kid Friendly,Washer,Dryer,Smoke Detector,Fire Extinguisher,Essentials,Shampoo,Laptop Friendly Workspace}. Some amenities come as 'translation missing: en.hosting_amenity_49' or 'translation missing: en.hosting_amenity_50'.
 
-    + `host_has_profile_pic`
+    + `square_feet`, square footage of the listing, with many missing values. 
 
-    + `host_identity_verified`
+    + `price`, described above.
 
-    + `street`
+    + `weekly_price`, the listing's weekly price in US dollars. Mostly missing.
 
-    + `neighbourhood`
+    + `monthly_price`, the listing's weekly price in US dollars. Mostly missing.
 
-    + `neighbourhood_cleansed`
+    + `security_deposit` the security deposit in US dollars, with missing values. Many hosts request a security deposit, but the money is not touched unless the host files a claim and Airbnb agrees to the charges. 
 
-    + `neighbourhood_group_cleansed`
+    + `cleaning_fee`, the cleaning fee in US dollars, with missing values. Hosts have the option of charging this in order to clean their space for a guest. 
 
-    + `city`
+    + `guests_included`, maximum number of guests allowed.
 
-    + `state`
+    + `extra_people`, extra guest fee in US dollars.
 
-    + `zipcode`
+    + `calendar_updated`, the last time the calendar of the listing has been updated, taking values such as 'never', 'today', 'yesterday', etc. Note that the data from the table `calendar` are valid only for the days the calendar is up to date.  
 
-    + `market`
+    + `number_of_reviews`, number of reviews of this listings that have been posted.
+    
+    + `first_review`, date of the first review, as yyyy-mm-dd, with missing values.
 
-    + `smart_location`
+    + `last_review`, date of the last review, as yyyy-mm-dd, with missing values.
 
-    + `country_code`
+    + `review_scores_rating`, average reviewers' rating of overall experience (what was your guest’s overall experience?). Range 1-100, with missing values.
 
-    + `country`
+    + `review_scores_accuracy`, average reviewers' rating of accuracy (how accurately did your listing page represent your space?). Range 1-10, with missing values.
 
-    + `latitude`
+    + `review_scores_cleanliness`, average reviewers' rating of cleanliness (did your guests feel that your space was clean and tidy?). Range 1-10, with missing values.
 
-    + `longitude`
+    + `review_scores_checkin`, average reviewers' rating of arrival (how smoothly did their check-in go?). Range 1-10, with missing values.
 
-    + `is_location_exact`
+    + `review_scores_communication`, average reviewers' rating of communication (how well did you communicate with your guest before and during their stay?). Range 1-10, with missing values.
 
-    + `property_type`
+    + `review_scores_location`, average reviewers' rating of location (how did guests feel about your neighborhood?). Range 1-10, with missing values.
 
-    + `room_type`
+    + `review_scores_value`, average reviewers' rating of value (did your guest feel your listing provided good value for the price?). Range 1-10, with missing values.
 
-    + `accommodates`
+    + `instant_bookable`, a dummy for Instant Book listings. Instant Book listings do not require approval from the host before they can be booked. 
 
-    + `bathrooms`
+    + `cancellation_policy`, cancellation policy, taking values 'flexible' (full refund within limited period), 'moderate' (full refund within limited period), 'strict' (full refund if cancellation is within 48 hours of booking), 'super_strict_30' ( 50% refund up until 30 days prior to check in), 'super_strict_60' (50% refund up until 60 days prior to check in) and 'long term' (first month not refundable, 30 day notice for cancellation).
 
-    + `bedrooms`
+    + `require_guest_profile_picture`, a dummy for requiring a guest profile picture.
 
-    + `beds`
+    + `require_guest_phone_verification`, a dummy for requiring the guest phone verification.
 
-    + `bed_type`
+    + `reviews_per_month`, average number of reviews per month, with missing values.
 
-    + `amenities`
+* The table `neighbourhoods` is a list of the 26 neighbourhoods of Boston. It has one fields:
 
-    + `square_feet`
+    + `neighbourhood`, described above. 
 
-    + `price`
+* The table `reviews` contains 68,275 detailed reviews for listings in Boston. The fields are:
 
-    + `weekly_price`
+    + `listing_id`, described above.
 
-    + `monthly_price`
+    + `review_id`, a unique review's ID.
 
-    + `security_deposit`
+    + `date`, the review's date, as yyyy-mm-dd.
 
-    + `cleaning_fee`
+    + `reviewer_id`, a unique author's ID.
 
-    + `guests_included`
+    + `reviewer_name`, the author's name.
 
-    + `extra_people`
-
-    + `minimum_nights`
-
-    + `maximum_nights`
-
-    + `calendar_updated`
-
-    + `has_availability`
-
-    + `availability_30`
-
-    + `availability_60`
-
-    + `availability_90`
-
-    + `availability_365`
-
-    + `calendar_last_scraped`
-
-    + `number_of_reviews`
-
-    + `first_review`
-
-    + `last_review`
-
-    + `review_scores_rating`
-
-    + `review_scores_accuracy`
-
-    + `review_scores_cleanliness`
-
-    + `review_scores_checkin`
-
-    + `review_scores_communication`
-
-    + `review_scores_location`
-
-    + `review_scores_value`
-
-    + `requires_license`
-
-    + `license`
-
-    + `jurisdiction_names`
-
-    + `instant_bookable`
-
-    + `cancellation_policy`
-
-    + `require_guest_profile_picture`
-
-    + `require_guest_phone_verification`
-
-    + `calculated_host_listings_count`
-
-    + `reviews_per_month`.
-
-* The table `reviews` contains detailed reviews for listings in Boston. The fields are:
-
-    + `listing_id`
-
-    + `id`
-
-    + `date`
-
-    + `reviewer_id`
-
-    + `reviewer_name`
-
-    + `comments`.
+    + `comments`, the text of the review.
 
 ### Source
 
