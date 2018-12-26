@@ -2,11 +2,15 @@
 
 ### Introduction
 
-1C Company (Russian: Фирма "1С") is an independent Russian software developer and publisher. Its headquarters are in Moscow, Russia. In Russian and CIS market is leader in business software with a share of 33% and compete with worldwide leader Sap.[2] With the creation of 1C International[3] started to compete also in other markets worldwide including the United States, Europe, Middle East, and East Asia. It is also known outside Russia as a video game developer with a major presence in events like the KRI, and whose products were published for international platforms like the Xbox.[4] In the internal Russian market, 1C is considered leader in business software form Small Medium Sizes Enterprises.[4]
+*1C Company* (in Russian, *Фирма 1С*) is an independent Russian software developer and publisher, with headquarters in Moscow. It is a leader of the business software market, with a share of 33%, competing with worldwide leader *SAP*. With the creation of *1C International*, it started to compete also in other markets worldwide, including the United States, Europe, Middle East and East Asia. It is also known outside Russia as a video game developer, whose products are published for international platforms like the *Xbox*.
 
-1C's comprehensive business software suite 1C:Предприятие (1C:Predpriyatiye, 1C:Enterprise[5]) has held an overwhelming market share for over a decade. 1C is also a leader in localizing and publishing Russian-language versions of international software. For instance, more than half of popular Western video games are licensed and published by 1C. The company has over 2000 employees. At present 8000 dealers from 600 cities cooperate with 1C. About 7500 teams constitute the 1C:Franchising partner network,which is a main channel of value-adding for 1C products. Service-partners provide regular information and technological support for 1C software customers. The network of authorized training centers is also operating
+In the internal Russian market, *1C Company*'s leadership is clear in: (a) business software form Small Medium Sizes Enterprises, with its comprehensive suite *1C:Enterprise* (*1C:Предприятие*), and (b) localizing and publishing Russian-language versions of international software. For instance, more than half of popular Western video games are licensed and published by *1C Company*. 
 
-The data for this project are daily historical sales of 1C Company, one of the largest Russian software firms. The task is to predict total sales for every product and store in the next month.
+The company has over 2000 employees. At present 8000 dealers from 600 cities cooperate with *1C Company*. About 7500 teams constitute the *1C:Franchising* partner network, which is a main channel of value-adding for *1C Company*'s products. Service-partners provide regular information and technological support for 1C  Company's software customers. 
+
+The data for this project are daily historical sales from a collection of *1C Company* stores. Some questions that could be addressed with these data are:
+
+* To predict total sales for every product and store in the next month.
 
 The list of shops and products slightly changes every month. So, creating a robust model that can handle such situations is part of the challenge.
 
