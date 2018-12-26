@@ -10,11 +10,11 @@ The company has over 2000 employees. At present 8000 dealers from 600 cities coo
 
 The data for this project are daily historical sales from a collection of *1C Company* stores. Some questions that could be addressed with these data are:
 
-* CXan we develop a model for predicting the total sales for every product and store in the next month. Since the list of shops and products changes slightly every month, creating a robust model that can handle such situations is part of the challenge.
+* Can we develop a model for predicting the total sales for every product and store in the next month? Since the list of shops and products changes slightly every month, creating a robust model that can handle such situations is part of the challenge.
 
 * Which are the best-selling products? Is it worth to maintain such a wide range of products, given the distribution of the sales across products and categories and products.
 
-* How is the distribution of sales across stires and weekdays?
+* How is the distribution of sales across stores and weekdays?
 
 * How are the returns distributed? Is there anything or anybody that can be taken as the culprit?
 
