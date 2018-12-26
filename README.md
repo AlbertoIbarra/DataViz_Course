@@ -30,7 +30,7 @@
 
 * Corporación Favorita Grocery Sales
 
-* 1C Company Sales
+* Predicting Software Sales
 
 * EcoBici
 
