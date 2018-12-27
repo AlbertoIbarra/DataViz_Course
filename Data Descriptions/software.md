@@ -6,7 +6,7 @@
 
 In the internal Russian market, *1C Company*'s leadership is clear in: (a) business software for Small and Medium-Sized Enterprises, with its comprehensive suite *1C:Enterprise* (*1C:Предприятие*), and (b) localizing and publishing Russian-language versions of international software. For instance, more than half of popular Western video games are licensed and published by *1C Company*. 
 
-The company has over 2000 employees. At present 8000 dealers from 600 cities cooperate with *1C Company*. About 7500 teams constitute the *1C:Franchising* partner network, which is a main channel of value-adding for *1C Company*'s products. Service-partners provide regular information and technological support for *1C Company*'s software customers. 
+The company has over 2,000 employees. At present 8,000 dealers from 600 cities cooperate with *1C Company*. About 7,500 teams constitute the *1C:Franchising* partner network, which is a main channel of value-adding for *1C Company*'s products. Service-partners provide regular information and technological support for *1C Company*'s software customers. 
 
 The data for this project are daily historical sales from a collection of *1C Company* stores. Some questions that could be addressed with these data are:
 
@@ -36,11 +36,9 @@ The database contains daily historical data from January 2013 to October 2015. I
 
     + `category_id`, described above.
 
-* The table `sales` contains daily sales data. It has 2,935,849 records. It has six fields:
+* The table `sales` contains daily sales data. It has 2,935,849 records. It has five fields:
 
     + `date`, the date as yyyy-mm-dd.
-
-    + `date_block_num`, a consecutive month number, used for convenience. January 2013 is 0, February 2013 is 1,..., October 2015 is 33.
 
     + `shop_id`, a unique identifier of the shop.
 
@@ -50,7 +48,7 @@ The database contains daily historical data from January 2013 to October 2015. I
 
     + `item_cnt_day`, the number of product units sold that day in that shop. A negative value indicates a return.
 
-* The table `shops` contains supplemental information about the 60 shops covered by the database. The fields are:
+* The table `shops` (original version `shops_ru`) contains supplemental information about the 60 shops covered by the database. The fields are:
 
     + `shop_name`, the name of the shop.
 
