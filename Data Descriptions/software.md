@@ -4,7 +4,7 @@
 
 *1C Company* (in Russian, *Фирма 1С*) is an independent Russian software developer and publisher, with headquarters in Moscow. It is a leader of the business software market, with a share of 33%, competing with worldwide leader *SAP*. With the creation of *1C International*, it started to compete also in other markets worldwide, including the United States, Europe, Middle East and East Asia. It is also known outside Russia as a video game developer, whose products are published for international platforms like the *Xbox*.
 
-In the internal Russian market, *1C Company*'s leadership is clear in business software for Small and Medium-Sized Enterprises, with its comprehensive suite *1C:Enterprise* (*1C:Предприятие*). It has also being localizing and publishing Russian-language versions of international software. For instance, more than half of popular Western video games are licensed and published by *1C Company*. 
+In the internal Russian market, *1C Company*'s leadership is clear in business software for Small and Medium-Sized Enterprises, with its comprehensive suite *1C:Enterprise* (*1C:Предприятие*). It has also published Russian-language versions of international software. For instance, more than half of popular Western video games are licensed and published by *1C Company*. 
 
 The company has over 2,000 employees. At present 8,000 dealers from 600 cities cooperate with *1C Company*. About 7,500 teams constitute the *1C:Franchising* partner network, which is a main channel of value-adding for *1C Company*'s products. Service-partners provide regular information and technological support for *1C Company*'s software customers. 
 
