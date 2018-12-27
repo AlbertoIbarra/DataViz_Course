@@ -44,7 +44,7 @@ The database contains daily historical data from January 2013 to October 2015. I
 
     + `item_id`, described above.
 
-    + `item_price`, the current price of the item.
+    + `item_price`, the current unit price of the product.
 
     + `item_cnt_day`, the number of product units sold that day in that shop. A negative value indicates a return.
 
