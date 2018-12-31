@@ -56,7 +56,7 @@ The data set contains information about 1,470 employees. The variables are:
 
 * `StockOption`, whether the employee owns company stock, taking values 'No' and 'Yes'.
 
-* `TotalWorkingYears` the total number of years that the employee has worked, across companies.
+* `TotalWorkingYears`, the total number of years that the employee has worked, across companies.
 
 * `TrainingLastYear`, the number of training activities in which the employee has participated during the last year.
 
