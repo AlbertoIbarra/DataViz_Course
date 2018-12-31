@@ -1,4 +1,4 @@
-## The Turnover Model
+## Predicting Employee Turnover
 
 ### Introduction
 
@@ -16,7 +16,7 @@ In this project, we explore one potential problem such an analytical 'strategic'
 
 The data set contains information about 1,470 employees. The variables are:
 
-* `EmployeeNumber`, the employee's ID.
+* `EmployeeID`, the employee's ID.
 
 * `Turnover`, taking values 'No' and 'Yes'.
 
@@ -28,49 +28,47 @@ The data set contains information about 1,470 employees. The variables are:
 
 * `DistanceFromHome`, the distance from home to the workplace, in miles.
 
-* `Education` (ordinal), with values 1 (Below College), 2 (College), 3 (Bachelor) 4 (Master) and 5 (Doctor).
+* `Education`, education level, taking values 1 (Below College), 2 (College), 3 (Bachelor), 4 (Master) and 5 (Doctor).
 
-* `EducationField`, with values "Human Resources", "Life Sciences", "Marketing", "Medical" and "Other Technical Degree".
+* `EducationField`, education field, taking values 'Human Resources', 'Life Sciences', 'Marketing', 'Medical' and 'Other Technical Degree'.
 
-* `EnvironmentSatisfaction`, with values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
+* `EnvironmentSatisfaction`, satisfaction with work environment, taking values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
 
 * `Gender`, taking values 'Female' and 'Male'.
 
-* `JobInvolvement` (ordinal), taking values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
+* `JobInvolvement`, the degree to which the employee is involved in his/her job, taking values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
 
-* `JobRole`, the job role, which can take the following values: 'Healthcare Representative', 'Human Resources', 'Laboratory Technician', 'Manager', 'Manufacturing Director', 'Research Director', 'Research Scientist', 'Sales Executive' and 'Sales Representative'.
+* `JobRole`, the job role, taking values 'Healthcare Representative', 'Human Resources', 'Laboratory Technician', 'Manager', 'Manufacturing Director', 'Research Director', 'Research Scientist', 'Sales Executive' and 'Sales Representative'.
 
-* `JobSatisfaction` (ordinal), taking values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
+* `JobSatisfaction`, the employee's satisfaction with his/her job, taking values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
 
-* `MaritalStatus`, the marital status, either 'Divorced', 'Married' and 'Single'.
+* `MaritalStatus`, the employee's marital status, either 'Divorced', 'Married' and 'Single'.
 
-* `Wages`, the monthly gross wages in US dollars.
+* `Wages`, the employee's monthly gross wages in US dollars.
 
-* `NumCompaniesWorked`, the number of companies for which the employee has previously worked .
+* `CompaniesWorked`, the number of companies for which the employee has previously worked.
 
-* `OverTime`, whether the employee works overtime, with values 'No' and 'Yes'.
+* `OverTime`, whether the employee works overtime, taking values 'No' and 'Yes'.
 
-* `PercentSalaryHike`, the percentage change in salary from 2016 vs 2015.
+* `SalaryHike`, the percentage change in salary from 2016 vs 2015.
 
-* `PerformanceRating` (ordinal), taking values 1 (Low), 2 (Good), 3 (Excellent) and 4 (Outstanding).
+* `PerfoRating`, the employee's performance, taking values 1 (Low), 2 (Good), 3 (Excellent) and 4 (Outstanding). Reported by the employee's manager.
 
-* `RelationshipSatisfaction` (ordinal), taking values 1 (Low), 2 (Medium), 3 (High) and 4 (Very High).
-
-* `StockOptionLevel` (ordinal), how much company stocks you own, taking values 0, 1, 2 and 3.
+* `StockOption`, whether the employee owns company stock, taking values 'No' and 'Yes'.
 
 * `TotalWorkingYears` the total number of years that the employee has worked, across companies.
 
-* `TrainingTimesLastYear`, the number of training activities in which the employee has participated during the last year.
+* `TrainingLastYear`, the number of training activities in which the employee has participated during the last year.
 
-* `WorkLifeBalance`, with values 1 (Bad), 2 (Good), 3 (Better) and 4 (Best).
+* `WorkLifeBalance`, taking values 1 (Bad), 2 (Good), 3 (Better) and 4 (Best).
 
 * `YearsAtCompany`, the number of years that the employee has been working for the company.
 
 * `YearsInCurrentRole`, the number of years the employee has worked in his/her actual role.
 
-* `YearsSinceLastPromotion`.
+* `YearsSinceLastPromotion`, the number of years since the employee's last promotion.
 
-* `YearsWithCurrManager`.
+* `YearsWithCurrManager`, the number of years the employee has been working with his/her current manager.
 
 ### Source
 
