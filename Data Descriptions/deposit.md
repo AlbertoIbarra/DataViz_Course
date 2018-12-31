@@ -8,7 +8,7 @@ Due to the internal competition and the current financial crisis, there are huge
 
 The bank has been using its own contact-center to carry out direct marketing campaigns. The telephone was the dominant marketing channel, although sometimes with an auxiliary use of the Internet online banking channel (e.g. by showing information to a specific targeted client). Furthermore, each campaign was managed in an integrated fashion and the results for all channels were outputted together.
 
-The manager in charge of organizing the next campaign is expected to optimize the effort. His objective is to find a **predictive model**, based on data of the preceding campaign, which can explain the success of a contact, i.e. if the client subscribes the deposit. Such model can increase the campaign's efficiency by identifying the main characteristics that affect success, helping in a better management of the available resources (e.g. human effort, phone calls and time) and the selection of a high quality and affordable set of potential customers. To be useful for the direct campaign, a predictive model should allow to reduce the number of calls in a relevant way without loosing a relevant number of subscribers.
+The manager in charge of organizing the next campaign is expected to optimize the effort. His objective is to find a **predictive model**, based on data of the preceding campaign, which can explain the success of a contact, i.e. if the client subscribes the deposit. Such a predictive model can increase the campaign's efficiency by identifying the main characteristics that affect success, helping in a better management of the available resources (e.g. human effort, phone calls and time) and the selection of a high quality and affordable set of potential customers. To be useful for the direct campaign, the model should allow to reduce the number of calls in a relevant way, without loosing a relevant number of subscribers.
 
 ### The data set
 
@@ -18,21 +18,21 @@ The data set combines demographic data with data about the interaction of the cu
 
 * `age`, the client's age in years.
 
-* `job`, the client's type of job, taking values 'admin', 'unknown', 'unemployed', 'management', 'housemaid', 'student', 'retired', 'self-employed, 'entrepreneur', 'technician' and 'services'.
+* `job`, the client's type of job, taking values 'admin', 'entrepreneur', 'housemaid', 'management', 'student', 'retired', 'self-employed, 'services', 'technician', 'unemployed' and 'unknown'.
 
-* `marital`, the client's marital status, taking values 'married', 'divorced' and 'single'.
+* `marital`, the client's marital status, taking values 'divorced', 'married' and 'single'.
 
-* `education`, the client's education level, taking values 'unknown', 'secondary', 'primary' and 'tertiary'.
+* `education`, the client's education level, taking values 'primary', 'secondary', 'tertiary' and 'unknown'.
 
-* `default`, whether the client has credit in default, taking values 'yes' and 'no'.
+* `default`, whether the client has credit in default, taking values 'no' and 'yes'.
 
 * `balance`, the client's  average yearly balance in euros.
 
-* `housing`, whether the client has a housing loan, taking values 'yes' and 'no'.
+* `housing`, whether the client has a housing loan, taking values 'no' and 'yes'.
 
-* `loan`, whether the client has a personal loan, taking values 'yes' and 'no'.
+* `loan`, whether the client has a personal loan, taking values 'no' and 'yes'.
 
-* `contact`, the usual communication channel, taking values 'unknown', 'telephone' and 'cellular'.
+* `contact`, the usual communication channel, taking values 'cellular', 'telephone' and 'unknown'.
 
 * `duration`, the duration of last contact before the campaign in seconds.
 
@@ -40,9 +40,9 @@ The data set combines demographic data with data about the interaction of the cu
 
 * `previous`, the number of contacts performed before this campaign and for this client.
 
-* `poutcome`, the outcome of the previous marketing campaign. The values are 'unknown', 'other', 'failure' and 'success'.
+* `poutcome`, the outcome of the previous marketing campaign. The values are 'failure', 'other', 'success' and 'unknown'.
 
-* `deposit`, whether the client has subscribed a term deposit, taking values 'yes' and 'no'.
+* `deposit`, whether the client has subscribed a term deposit, taking values 'no' and 'yes'.
 
 ### Source
 
