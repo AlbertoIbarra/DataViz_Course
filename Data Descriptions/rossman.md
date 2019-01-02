@@ -8,7 +8,7 @@ To get ideas on how to create a robust prediction model, Rossmann has released d
 
 ### The database
 
-The historical sales data cover 1,115 Rossmann stores, from January 2013 to July 2015. Note that some stores in the database were temporarily closed for refurbishment.
+The historical sales data cover 1,115 Rossmann stores, from January 2013 to July 2015. Note that some stores in the database were temporarily closed for refurbishment (from July 1st to December 31st).
 
 * The table `sales` contains daily sales data for every store. It has 1,017,209 records. The fields are:
 
@@ -18,7 +18,7 @@ The historical sales data cover 1,115 Rossmann stores, from January 2013 to July
 
     + `Date`, the date, as yyyy-mm-dd.
 
-    + `Sales`, the turnover for any given day, in euros.
+    + `Sales`, the turnover for any given day, in euros. It takes value zero when the store is closed.
 
     + `Customers`, the number of customers on a given day.
 
@@ -26,11 +26,13 @@ The historical sales data cover 1,115 Rossmann stores, from January 2013 to July
 
     + `Promo`, a dummy for having a promotion on a given day.
 
-    + `StateHoliday`, indicating state holidays. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. The values are: a = Public holiday, b = Easter holiday, c = Christmas and 0 = None.
+    + `StateHoliday`, indicating state holidays. It takes values 'Christmas', 'Easter Holiday', 'None' and 'Public Holiday'. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends.
 
     + `SchoolHoliday`, a dummy for a store being affected by the closure of public schools on a particular date.
 
-* The table `store` contains supplemental information about the stores. The fields are:
+* The table `stores` contains supplemental information about the stores. The fields are:
+
+    +  `Store`, described above. 
 
     +  `StoreType`, differentiating four different store models. It takes values 'a', 'b', 'c' and 'd'.
 
