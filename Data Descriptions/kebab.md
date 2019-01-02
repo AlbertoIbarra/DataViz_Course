@@ -2,15 +2,17 @@
 
 ### Introduction
 
-The Kebab Factory is a family restaurant which operates in Harmah, Saudi Arabia, for the last years. The business is focused on dine-in and delivery. Given the current success, they opened a second branch on Thursday 27th, July 2017. A third branch followed on Saturday 13th, January 2018.
+The Kebab Factory is a family restaurant which have been operateing in Harmah, Saudi Arabia, for the last years. The business is focused on dine-in and delivery. Given the current success, a second branch was opened on Thursday 27th, July 2017. A third branch followed on Saturday 13th, January 2018.
 
-The data for this project are daily sales, which have been normalized for confidentiality reasons, in Saudi Arabia riyals (SAR) and in number of customers. There are some interesting questions that the managers of The Kebab Factory would like to examine:
+The data for this project are the daily sales of The Kebab Factory, in Saudi Arabia riyals (SAR) and in number of customers. The data have been normalized for confidentiality reasons.
+
+There are some interesting questions that the managers of The Kebab Factory would like to examine:
 
 * Did the total sales go up or down with the opening of new branches? How is the performance for the new branches?
 
 * Which variables are more relevant?
 
-* Is there a simple formula for predicting sales for each branch? (this will help the team reduce the waste).
+* Is there a simple formula for predicting sales for each branch? Such a formula would help the team reduce the waste.
 
 * What is the lagging duration of the ads? How long does their effect last?
 
@@ -20,33 +22,33 @@ The data for this project are daily sales, which have been normalized for confid
 
 The data cover from 2017-02-14 to 2018-11-13. The variables are:
 
-* `date` (string), as 'yyyy-mm-dd'.
+* `date`, the date as 'yyyy-mm-dd'.
 
-* `weekday` (string), as Monday, Tuesday, etc. Note that the weekend in Saudi Arabia is Friday and Saturday.
+* `weekday`, the weekday as Monday, Tuesday, etc. Note that the weekend in Saudi Arabia is Friday and Saturday.
 
-* `branch1_sales` (numeric), daily sales in Branch 1, in SAR. The sales are zero the days the restaurant is not open.
+* `branch1_sales`, the daily sales in Branch 1, in SAR. The sales are zero the days the restaurant is not open.
 
-* `branch2_sales` (numeric), daily sales in Branch 2, in SAR. The sales are zero the days the restaurant is not open. The first opening takes place on 2017-07-27.
+* `branch2_sales`, the daily sales in Branch 2, in SAR. The sales are zero the days the restaurant is not open. The first opening took place on July 27th, 2017.
 
-* `branch3_sales` (numeric), daily sales in Branch 3, in SAR. The sales are zero the days the restaurant is not open. The first opening takes place on 2018-01-13.
+* `branch3_sales`, the daily sales in Branch 3, in SAR. The sales are zero the days the restaurant is not open. The first opening took place on January 13th, 2018.
 
-* `branch1_count` (numeric), daily number of customers in Branch 1.
+* `branch1_count`, the daily number of customers in Branch 1.
 
-* `branch2_count` (numeric), daily number of customers in Branch 2.
+* `branch2_count`, the daily number of customers in Branch 2.
 
-* `branch3_count` (numeric), daily number of customers in Branch 3.
+* `branch3_count`, the daily number of customers in Branch 3.
 
-* `pay_day` (numeric), a dummy for the day in which the workers are paid their salaries.  
+* `pay_day`, a dummy for the day in which the workers are paid their salaries.  
 
-* `ramadan` (numeric), a dummy for the Ramadan days (these are fasting days, where Saudis do not eat during the day).
+* `ramadan`, a dummy for the Ramadan days. These are fasting days, on which Saudis do not eat during the day.
 
-* `school_holiday` (numeric), a dummy for school holidays.
+* `school_holiday`, a dummy for school holidays.
 
-* `exam_day` (numeric), a dummy for exam days.
+* `exam_day`, a dummy for exam days.
 
-* `social_ads` (numeric), a dummy for days in which social media ads are posted.
+* `social_ads`, a dummy for days on which social media ads are posted.
 
-* `hunger_station` (numeric), a dummy for days with promo for free delivery through the HungerStation app.
+* `hunger_station`, a dummy for days with promo for free delivery through the HungerStation app.
 
 ### Source
 
