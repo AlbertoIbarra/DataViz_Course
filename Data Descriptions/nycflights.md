@@ -24,15 +24,15 @@ The database includes five tables. In the last three tables, the data are not co
 
 * The table `airlines` contains the look up airline names (16) from their carrier codes:
 
-    + `carrier`, the two-letter abbreviation of the carrier name.
+    + `carrier_name`, the two-letter abbreviation of the carrier name.
 
     + `name`, the full name of the carrier.
 
-* The table `airports` contains metadata for all the airports (1,458) connected with the NYC area:
+* The table `airports` contains metadata for all the airports (1,458) connected with the NYC area, with 8 fields:
 
     + `faa`, the FAA airport code.
 
-    + `name`, the usual name of the aiport.
+    + `airport_name`, the usual name of the aiport.
 
     + `lon`, the longitude of the location of the airport.
 
@@ -46,21 +46,15 @@ The database includes five tables. In the last three tables, the data are not co
 
     + `tzone`, the IANA time zone, as determined by GeoNames webservice.
 
-* The table `flights` contains on-time data for all flights (336,776) that departed the NYC area in 2013:
+* The table `flights` contains on-time data for all the flights (336,776) that departed the NYC area in 2013. It has the following 11 fields:
 
-    + `datetime`, the scheduled date and hour of the flight, as yyyy-mm-dd hh:mm:ss, in the local time zone.
-
-    + `dep_time`, the actual departure time of the flight.
+    + `sched_dep_time`, the scheduled departure time of the flight, as yyyy-mm-dd hh:mm:ss, in the NYC time zone.
     
-    + `arr_time`, the actual arrival time of the flight.
+    + `sched_arr_time`, the scheduled arrival time of the flight, as yyyy-mm-dd hh:mm:ss, in the NYC time zone.
 
-    + `sched_dep_time`, the scheduled departure time of the flight.
+    + `dep_delay`, the departure delay in minutes, with negative time representing early departure. About 8,000 values missing.
     
-    + `sched_arr_time`, the scheduled arrival time of the flight.
-
-    + `dep_delay`, the departure dela in minutes, with negative time representing early departure.
-    
-    + `arr_delay`, the arrival delay in minutes, with negative time representing early arrival.
+    + `arr_delay`, the arrival delay in minutes, with negative time representing early arrival. About 8,000 values missing.
 
     + `carrier`, the two-letter carrier abbreviation.
 
@@ -72,15 +66,15 @@ The database includes five tables. In the last three tables, the data are not co
 
     + `dest`, the destination of the flight.
 
-    + `air_time`, the amount of time spent in the air in minutes.
+    + `air_time`, the amount of time spent in the air, in minutes.
 
-    + `distance`, the distance between the origin and destination airports in miles.
+    + `distance`, the distance between the origin and destination airports, in miles.
 
-* The table `planes` contains plane metadata for all plane tailnumbers (3,322) found in the FAA aircraft registry:
+* The table `planes` contains plane metadata for all the plane tailnumbers (3,322) found in the FAA aircraft registry. The 9 fields are:
 
-    + `tailnum`, the plane tail number.
+    + `tailnum`, described above.
 
-    + `year`, the year the plane was manufactured.
+    + `year`, the year the plane was manufactured. 70 values missing.
 
     + `type`, the type of plane.
 
@@ -92,31 +86,31 @@ The database includes five tables. In the last three tables, the data are not co
     
     + `seats`, the number of seats of the plane.
 
-    + `speed`, the average cruising speed of the plane in mph.
+    + `speed`, the average cruising speed of the plane in mph. Missing except in a few cases.
 
     + `engine`, the type of engine.
 
-* The table `weather` contains hourly meterological data for LGA, JFK and EWR:
+* The table `weather` contains hourly meterological data for LGA, JFK and EWR. It has 26,130 records with following 11 fields:
 
     + `origin`, the weather station.
 
     + `datetime`, the date and hour of the recording, as yyyy-mm-dd hh:mm:ss.
 
-    + `temp`, the temperature in Farenheit.
+    + `temp`, the temperature in Farenheit degrees.
 
-    + `dewp`, the dewpoint in Farenheit.
+    + `dewp`, the dewpoint in Farenheit degrees.
 
     + `humid`, the relative humidity in percentage scale.
 
-    + `wind_dir., the wind direction in degrees.
+    + `wind_dir., the wind direction in degrees. About 400 values missing.
 
-    + `wind_speed`, the wind speed in mph.
+    + `wind_speed`, the wind speed in mph. About 400 values missing.
 
     + `wind_gust`, the wind gust in mph.
 
     + `precip`, the precipitation in inches.
 
-    + `pressure`, the sea level pressure in millibars.
+    + `pressure`, the sea level pressure in millibars. About 2,500 values missing.
 
     + `visib`, the visibility in miles.
 
