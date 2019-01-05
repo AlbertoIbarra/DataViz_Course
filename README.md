@@ -32,6 +32,6 @@
 
 * Predicting Software Sales
 
-* EcoBici
+* EcoBici Trips
 
 * Instacart Market Basket Analysis
