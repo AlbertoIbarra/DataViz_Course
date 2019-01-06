@@ -8,11 +8,13 @@ ACSI provides high quality data, allowing for comparison across industries. But 
 
 The airlines industry makes a good scenario to see the extent to which customer satisfaction measures derived from Twitter data can compete with those provided by the ACSI. Airlines rank low among the different industries covered by the ACSI. But there is no uniformity within the airlines industry. In 2018, among the nine airlines included in the index, Southwest Air, Alaska Air and JetBlue were ranked on top, while Fly Frontier and Spirit Airlines occupied the last places.
 
-The data for this project have been extracted from the Twitter REST API, using the Twitter handles of the nine airlines mentioned above as search strings: '@AlaskaAir', '@Allegiant', '@AmericanAir','@Delta', '@FlyFrontier', '@JetBlue', '@SouthwestAir', '@SpiritAirlines' and '@united'. The database covers the whole month of December 2018.
+The data for this project have been extracted from the Twitter REST API, using the Twitter handles of the nine airlines mentioned above as search strings: '@AlaskaAir', '@Allegiant', '@AmericanAir','@Delta', '@FlyFrontier', '@JetBlue', '@SouthwestAir', '@SpiritAirlines' and '@united'. The data collection was restricted to tweets posted during December 2018.
 
-### The data base
+### The data set
 
-The data base available for this project contains nine tables, one for each company. The fields (names as provided by the Twitter API) are:
+The data set contains 285,835 tweets, captured as described above. It has the following 12 fields:
+
+* `airline`, a unique iD for the airline.
 
 * `created_at`, coordinated universal time (UTC) when the weet was created.
 
