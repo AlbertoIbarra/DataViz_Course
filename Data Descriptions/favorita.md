@@ -6,7 +6,7 @@ Brick-and-mortar grocery stores are always in a delicate dance with purchasing a
 
 The problem becomes more complex as retailers add new locations with unique needs, new products, ever transitioning seasonal tastes, and unpredictable product marketing. Corporación Favorita, a large Ecuadorian-based grocery retailer, knows this all too well. They operate hundreds of supermarkets, with over 200,000 different products on their shelves. They currently rely on subjective forecasting methods, with very little data to back them up and very little automation to execute plans.
 
-In search for help to build a model that more accurately forecasts product sales, Corporación Favorita has released sales data of 4,100 products in a sample of 48 stores located in Ecuador. The data cover 4.5 years, from January 1st, 2013. to August 15th, 2017. The management at Corporación Favorita is excited to see how machine learning could better ensure they please customers by having just enough of the right products at the right time.
+In search for help to build a model that more accurately forecasts product sales, Corporación Favorita has released sales data of 4,100 products in a sample of 48 stores located in Ecuador. The data cover 4.5 years, from January 1st, 2013, to August 15th, 2017. The management at Corporación Favorita is excited to see how machine learning could better ensure they please customers by having just enough of the right products at the right time.
 
 ### The database
 
