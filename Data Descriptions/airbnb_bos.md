@@ -18,9 +18,9 @@ Airbnb has been releasing and updating data at the Inside Airbnb site (`www.insi
 
 * How many houses and apartments are being rented out frequently to tourists and not to long-term residents?
 
-* How much are hosts making from renting to tourists (compare that to long-term rentals)?
+* How much are hosts making from renting to tourists, compared to long-term rentals?
 
-* Which hosts are running a business with multiple listings and where they?
+* Which hosts are running a business with multiple listings and where are they?
 
 Or you can undertake more ambitious tasks, such as:
 
@@ -36,7 +36,7 @@ Or you can undertake more ambitious tasks, such as:
 
 The database is integrated by four tables:
 
-* The table `calendar` contains detailed calendar data for listings in Boston. There are 4 fields and 1,308,890 records. The fields are:
+* The table `calendar` contains detailed calendar data for listings in Boston. There are 4 fields and about 1.3 million records. The fields are:
 
     + `listing_id`, a unique listing's ID. An active listing is a property listed on Airbnb. Listings may include entire homes or apartments, private rooms or shared spaces. 
 
@@ -44,13 +44,13 @@ The database is integrated by four tables:
 
     + `available`, a dummy for being available on that date.
 
-    + `price`, the listing's price on that date in US dollars, missing when the listing is not available. The price you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
+    + `price`, the listing's price on that date in US dollars, missing when the listing is not available. The price that you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
 
-* The table `listings` contains 3,585 detailed listings in Boston. The language in the descriptions is typically English. The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines. Some fields, in particular all the fields containing URL's, have been dropped. The remaining 61 fields are:
+* The table `listings` contains about 3,500 detailed listings in Boston. The language in the descriptions is typically English. The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines. Some fields, in particular all the fields containing URL's, have been dropped. The remaining 61 fields are:
 
     + `listing_id`, described above.
 
-    + `name`, the listing's name. It is a minimal description (maximum 35 characters) of the place, intended to be appealing, such as 'Sunny Bungalow in the City'.
+    + `name`, the listing's name. It is a minimal description (maximum 35 characters) of the place, intended to be appealing, such as 'Centric Bohemian next Ramblas&Macba'.
 
     + `summary`, a longer description (maximum 250 characters).
 
@@ -76,21 +76,21 @@ The database is integrated by four tables:
 
     + `host_since`, date the host started listing that property, as yyyy-mm-dd.
 
-    + `host_location`, a town, state or country, not necessarily close to the property listed.
+    + `host_location`, a town or country, not necessarily close to the property listed.
 
     + `host_about`, bio information about the host, with many missing values and lots of diversity.
 
     + `host_response_time`, taking the values 'a few days or more', 'N/A', 'within a day', 'within a few hours' and 'within an hour', with a few missing values. 
 
-    + `host_response_rate`, percentage of new inquiries and reservation requests the host responded to (by either accepting/pre-approving or declining) within 24 hours in the past 30 days. Many missing values, as 'N/A'.
+    + `host_response_rate`, percentage of new inquiries and reservation requests the host responded to (by either accepting/pre-approving or declining) within 24 hours in the past 30 days.
 
-    + `host_acceptance_rate`, combined percentage of reservation requests the host accepted and booking inquiries he/she pre-approved or responded to with a Special Offer. Many missing values, as 'N/A'.
+    + `host_acceptance_rate`, combined percentage of reservation requests the host accepted and booking inquiries he/she pre-approved or responded to with a Special Offer.
 
     + `host_is_superhost`, a dummy for being a Superhost. The minimum requirements for Superhosts are: (a) To have hosted at least 10 trips, (b) to have maintained a 90% response rate or higher, and (c) to have received a 5-star review at least 80% of the time been reviewed, as long as at least half of the guests who stayed with the host left a review. Once a host reaches Superhost status, a badge will automatically appear on their listing and profile to help you identify them.
 
-    + `host_listings_count`, number of listings of that host in Boston.
+    + `host_listings_count`, the number of listings of that host in Barcelona.
 
-    + `host_verifications`, a collection within square brackets, such as ['email', 'phone', 'facebook', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
+    + `host_verifications`, a collection within square brackets, such as ['email', 'phone', 'reviews']. The verification process also helps to ensure that Airbnb and guests have someone who they can hold responsible in the event that a problem arises with a booking.    
 
     + `host_has_profile_pic`, dummy for the host including a picture in his/her profile, with a few missing values.
 
@@ -120,7 +120,7 @@ The database is integrated by four tables:
 
     + `bed_type`, taking values 'Airbed', 'Couch', 'Futon Pull-out Sofa' and 'Real Bed'.
 
-    + `amenities`, a collection within curly braces, such as {TV,Wireless Internet,Kitchen,Free Parking on Premises,Pets live on this property,Dog(s),Heating,Family/Kid Friendly,Washer,Dryer,Smoke Detector,Fire Extinguisher,Essentials,Shampoo,Laptop Friendly Workspace}. Some amenities come as 'translation missing: en.hosting_amenity_49' or 'translation missing: en.hosting_amenity_50'.
+    + `amenities`, a collection within curly braces, such as {TV,Internet,Wireless Internet,Air conditioning,Kitchen,Elevator in building,Buzzer/wireless intercom,Heating,Washer,Essentials,Shampoo}.
 
     + `square_feet`, square footage of the listing, with many missing values. 
 
@@ -130,57 +130,59 @@ The database is integrated by four tables:
 
     + `monthly_price`, the listing's weekly price in US dollars. Mostly missing.
 
-    + `security_deposit` the security deposit in US dollars, with missing values. Many hosts request a security deposit, but the money is not touched unless the host files a claim and Airbnb agrees to the charges. 
+    + `security_deposit` the security deposit in US dollars, with many missing values. Many hosts request a security deposit, but the money is not touched unless the host files a claim and Airbnb agrees to the charges.
 
-    + `cleaning_fee`, the cleaning fee in US dollars, with missing values. Hosts have the option of charging this in order to clean their space for a guest. 
+    + `cleaning_fee`, the cleaning fee in US dollars, with many missing values. Hosts have the option of charging this in order to clean their space for a guest.
 
-    + `guests_included`, maximum number of guests allowed.
+    + `guests_included`, the maximum number of guests allowed.
 
-    + `extra_people`, extra guest fee in US dollars.
+    + `extra_people`, the extra guest fee in US dollars.
 
     + `calendar_updated`, the last time the calendar of the listing has been updated, taking values such as 'never', 'today', 'yesterday', etc. Note that the data from the table `calendar` are valid only for the days the calendar is up to date.  
 
-    + `number_of_reviews`, number of reviews of this listings that have been posted.
+    + `number_of_reviews`, the number of reviews of this listings that have been posted.
     
-    + `first_review`, date of the first review, as yyyy-mm-dd, with missing values.
+    + `first_review`, the date of the first review, as yyyy-mm-dd.
 
-    + `last_review`, date of the last review, as yyyy-mm-dd, with missing values.
+    + `last_review`, the date of the last review, as yyyy-mm-dd.
 
-    + `review_scores_rating`, average reviewers' rating of overall experience (what was your guest’s overall experience?). Range 1-100, with missing values.
+    + `review_scores_rating`, the average reviewers' rating of overall experience (*what was your guest’s overall experience?*). Range 1-100, with many missing values.
 
-    + `review_scores_accuracy`, average reviewers' rating of accuracy (how accurately did your listing page represent your space?). Range 1-10, with missing values.
+    + `review_scores_accuracy`, the average reviewers' rating of accuracy (*how accurately did your listing page represent your space?*). Range 1-10, with many missing values.
 
-    + `review_scores_cleanliness`, average reviewers' rating of cleanliness (did your guests feel that your space was clean and tidy?). Range 1-10, with missing values.
+    + `review_scores_cleanliness`, the average reviewers' rating of cleanliness (*did your guests feel that your space was clean and tidy?*). Range 1-10, with many missing values.
 
-    + `review_scores_checkin`, average reviewers' rating of arrival (how smoothly did their check-in go?). Range 1-10, with missing values.
+    + `review_scores_checkin`, the average reviewers' rating of arrival (*how smoothly did their check-in go?*). Range 1-10, with many missing values.
 
-    + `review_scores_communication`, average reviewers' rating of communication (how well did you communicate with your guest before and during their stay?). Range 1-10, with missing values.
+    + `review_scores_communication`, the average reviewers' rating of communication (*how well did you communicate with your guest before and during their stay?*). Range 1-10, with many missing values.
 
-    + `review_scores_location`, average reviewers' rating of location (how did guests feel about your neighborhood?). Range 1-10, with missing values.
+    + `review_scores_location`, the average reviewers' rating of location (*how did guests feel about your neighborhood?*). Range 1-10, with many missing values.
 
-    + `review_scores_value`, average reviewers' rating of value (did your guest feel your listing provided good value for the price?). Range 1-10, with missing values.
+    + `review_scores_value`, the average reviewers' rating of value (*did your guest feel your listing provided good value for the price?*). Range 1-10, with many missing values.
 
     + `instant_bookable`, a dummy for Instant Book listings. Instant Book listings do not require approval from the host before they can be booked. 
 
-    + `cancellation_policy`, cancellation policy, taking values 'flexible' (full refund within limited period), 'moderate' (full refund within limited period), 'strict' (full refund if cancellation is within 48 hours of booking), 'super_strict_30' ( 50% refund up until 30 days prior to check in), 'super_strict_60' (50% refund up until 60 days prior to check in) and 'long term' (first month not refundable, 30 day notice for cancellation).
+    + `cancellation_policy`, the cancellation policy, taking values 'flexible' (full refund within limited period), 'moderate' (full refund within limited period), 'strict' (full refund if cancellation is within 48 hours of booking), 'super_strict_30' ( 50% refund up until 30 days prior to check in), 'super_strict_60' (50% refund up until 60 days prior to check in) and 'long term' (first month not refundable, 30 day notice for cancellation).
 
     + `require_guest_profile_picture`, a dummy for requiring a guest profile picture.
 
     + `require_guest_phone_verification`, a dummy for requiring the guest phone verification.
 
-    + `reviews_per_month`, average number of reviews per month, with missing values.
+    + `reviews_per_month`, the average number of reviews per month, with many missing values.
 
-* The table `neighbourhoods` is a list of the 26 neighbourhoods of Boston. It has one fields:
+* The table `neighbourhoods` is a list of the 73 neighbourhoods of Barcelona. It has two fields:
 
+    + `neighbourhood_group`, 10 groups of neighbourhoods.
+    
     + `neighbourhood`, described above. 
 
-* The table `reviews` contains 68,275 detailed reviews for listings in Boston. The fields are:
+* The table `reviews` contains about 68,000 detailed reviews for listings in Boston. The fields are:
 
     + `listing_id`, described above.
 
     + `review_id`, a unique review's ID.
 
-    + `date`, the review's date, as yyyy-mm-dd.
+    + `review_date`, the review's date, as yyyy-mm-dd.
 
     + `reviewer_id`, a unique author's ID.
 
