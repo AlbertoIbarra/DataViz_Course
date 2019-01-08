@@ -8,7 +8,7 @@
 
 * Cryptocurrency Market Data
 
-* Vehicles for Sale from Craigslist.org
+* Vehicles for Sale from Craigslist
 
 * Santander Product Recommendation
 
