@@ -1,1 +1,1 @@
-#### This folder contains the material used in the classroom
+#### This folder contains the materials used in the classroom.
