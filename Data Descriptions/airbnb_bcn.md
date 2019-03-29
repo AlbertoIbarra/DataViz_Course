@@ -46,7 +46,7 @@ The database is integrated by four tables:
 
     + `price`, the listing's price on that date in US dollars, missing when the listing is not available. The price that you see when you search Airbnb (with dates selected) is the total price divided by the number of nights you selected. The price shown is for the listing as a whole, not per person. Price per night can be lower if you book for several days.
 
-* The table `listings` contains about 17,5 million detailed listings in Barcelona. The language in the descriptions is typically English or Spanish (with exceptions). The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines (in Spanish words such as 'habitación'). Some fields, in particular all the fields containing URL's, have been dropped. The remaining 61 fields are:
+* The table `listings` contains about 17,500 detailed listings in Barcelona. The language in the descriptions is typically English or Spanish (with exceptions). The text comes in UTF-8 encoding, so special characters may not be correctly shown in Windows machines (in Spanish words such as 'habitación'). Some fields, in particular all the fields containing URL's, have been dropped. The remaining 61 fields are:
 
     + `listing_id`, described above.
 
@@ -176,7 +176,7 @@ The database is integrated by four tables:
     
     + `neighbourhood`, described above. 
 
-* The table `reviews` contains about 400,00 detailed reviews for listings in Barcelona. The fields are:
+* The table `reviews` contains about 400,000 detailed reviews for listings in Barcelona. The fields are:
 
     + `listing_id`, described above.
 
